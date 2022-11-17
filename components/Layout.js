@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import Header from "./Header";
+import Header from "@components/Header";
 
 const Layout = ({ children }) => {
     return <>
