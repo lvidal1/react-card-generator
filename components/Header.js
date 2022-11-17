@@ -1,8 +1,10 @@
 import NavItem from "./NavItem";
 
+import styles from "../styles/Header.module.css"
+
 const Header = () => {
     return <header>
-        <nav className="font-sans flex flex-row text-left justify-between py-4 px-6 bg-white shadow items-baseline w-full">
+        <nav className={styles.header}>
             <NavItem url="/">Home</NavItem>
             <NavItem url="/sandbox">Sandbox</NavItem>
         </nav>
