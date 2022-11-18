@@ -8,8 +8,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the feature branch
   push:
     branches:
-      - main
-      - feature*
+      - "*"
+      - "!main"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,3 +25,5 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Run esLint
         run: npm run lint
+      - name: Run unit tests
+        run: npm run test
