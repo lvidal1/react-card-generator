@@ -2,12 +2,15 @@ import React from "react";
 
 import Layout from "@components/Layout";
 import Toolbar from "@components/Toolbar";
+import Area from "@components/Area";
 
 export default function Sandbox() {
 	return (
 		<Layout>
 			<div className="flex flex-col flex-grow self-stretch">
-				<div className="flex-1">Editor</div>
+				<div className="flex-1">
+					<Area />
+				</div>
 				<Toolbar />
 			</div>
 		</Layout>
