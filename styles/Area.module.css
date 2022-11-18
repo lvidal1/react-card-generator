@@ -1,0 +1,7 @@
+.container {
+	@apply flex flex-grow justify-center items-center self-stretch bg-gray-400;
+}
+
+.layer {
+	@apply w-4/5 h-96 bg-white;
+}
