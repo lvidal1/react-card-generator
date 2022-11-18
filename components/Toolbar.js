@@ -1,20 +1,22 @@
 import React from "react";
 
+import styles from "@styles/Toolbar.module.css"
+
 const Toolbar = () => {
-    return <div className="w-full flex justify-between p-5">
-        <div className="w-12 h-12 flex justify-center items-center bg-purple-100">
+    return <div className={styles.toolbar}>
+        <div className={styles.button}>
             <a href="#">1</a>
         </div>
-        <div className="w-12 h-12 flex justify-center items-center bg-purple-100">
+        <div className={styles.button}>
             <a href="#">2</a>
         </div>
-        <div className="w-12 h-12 flex justify-center items-center bg-purple-100">
+        <div className={styles.button}>
             <a href="#">3</a>
         </div>
-        <div className="w-12 h-12 flex justify-center items-center bg-purple-100">
+        <div className={styles.button}>
             <a href="#">4</a>
         </div>
-        <div className="w-12 h-12 flex justify-center items-center bg-purple-100">
+        <div className={styles.button}>
             <a href="#">5</a>
         </div>
     </div>;
