@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setPersonalInformation } from "@store/slices/user";
+import { togglePersonalInfo } from "@store/slices/modal";
 
 import Modal from "@components/shared/Modal";
 import Input from "@components/shared/Input";
@@ -12,10 +13,15 @@ const Information = () => {
 	const [fullname, setFullname] = useState("");
 	const [birth, setBirth] = useState("");
 
-	const onSubmit = () => {
+	const submit = () => {
 		if (fullname.length && birth.length) {
 			dispatch(setPersonalInformation({ fullname, birth }));
+			close();
 		}
+	};
+
+	const close = () => {
+		dispatch(togglePersonalInfo(false));
 	};
 
 	function handleFullNameChange(e) {
@@ -28,7 +34,7 @@ const Information = () => {
 
 	return (
 		<Modal>
-			<Modal.Header>Add your personal info</Modal.Header>
+			<Modal.Header onClose={close}>Add your personal info</Modal.Header>
 			<Modal.Body>
 				<Input
 					id="Modal.Information.Fullname"
@@ -44,7 +50,7 @@ const Information = () => {
 				/>
 			</Modal.Body>
 			<Modal.Footer>
-				<Button text="Save" onClick={onSubmit} />
+				<Button text="Save" onClick={submit} />
 			</Modal.Footer>
 		</Modal>
 	);

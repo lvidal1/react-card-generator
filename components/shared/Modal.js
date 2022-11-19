@@ -14,19 +14,16 @@ const Modal = (props) => {
 	);
 };
 
-const Header = ({ children }) => {
+const Header = ({ children, onClose }) => {
 	return (
 		<div className={styles.header}>
 			<div>
-				<i className="fas fa-exclamation-circle text-blue-500"></i>
 				<span className="font-bold text-gray-700 text-lg">
 					{children}
 				</span>
 			</div>
 			<div>
-				<button>
-					<i className="fa fa-times-circle text-red-500 hover:text-red-600 transition duration-150"></i>
-				</button>
+				<button onClick={onClose}>X</button>
 			</div>
 		</div>
 	);

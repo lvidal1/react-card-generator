@@ -1,13 +1,18 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { togglePersonalInfo } from "@store/slices/modal";
 
 import styles from "@styles/Toolbar.module.css";
 
 const Toolbar = () => {
+	const dispatch = useDispatch();
+
 	return (
 		<div className={styles.toolbar}>
 			<div
 				className={styles.button}
 				data-testid="Toolbar.Button.Information"
+				onClick={() => dispatch(togglePersonalInfo(true))}
 			>
 				<a href="#">1</a>
 			</div>
