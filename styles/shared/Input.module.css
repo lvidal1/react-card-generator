@@ -1,5 +1,5 @@
 .control {
-	@apply md:w-1/2 px-3 mb-6 md:mb-0;
+	@apply md:w-1/2 mb-6 md:mb-0;
 }
 
 .label {
@@ -7,7 +7,7 @@
 }
 
 .input {
-	@apply appearance-none block w-full bg-gray-200 text-gray-700  rounded py-3 px-4 mb-3;
+	@apply appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3;
 }
 
 .input--error {

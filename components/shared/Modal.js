@@ -18,7 +18,7 @@ const Modal = ({ children }) => {
                 {children}
             </div>
             <div className={styles.footer}>
-                <button class="bg-purple-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-purple-600 transition duration-150">Ok</button>
+                <button class="bg-purple-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-purple-600 transition duration-150">OK</button>
             </div>
         </div>
     </div>;
