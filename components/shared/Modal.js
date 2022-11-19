@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "@styles/shared/Modal.module.css"
 
-const Modal = () => {
+const Modal = ({ children }) => {
     return <div className={styles.backdrop}>
         <div className={styles.container}>
             <div className={styles.header}>
@@ -15,7 +15,7 @@ const Modal = () => {
                 </div>
             </div>
             <div className={styles.body}>
-                Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {children}
             </div>
             <div className={styles.footer}>
                 <button class="bg-purple-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-purple-600 transition duration-150">Ok</button>

@@ -3,13 +3,17 @@
 }
 
 .label {
-	@apply block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2;
+	@apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2;
 }
 
 .input {
-	@apply appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3;
+	@apply appearance-none block w-full bg-gray-200 text-gray-700  rounded py-3 px-4 mb-3;
+}
+
+.input--error {
+	@apply border border-red-500;
 }
 
 .error {
-	@apply text-red text-xs italic;
+	@apply text-red-500 text-xs italic;
 }
