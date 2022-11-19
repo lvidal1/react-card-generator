@@ -2,6 +2,7 @@ import React from "react";
 
 import Modal from "@components/shared/Modal";
 import Input from "@components/shared/Input";
+import Button from "../shared/Button";
 
 
 const Information = () => {
@@ -12,7 +13,7 @@ const Information = () => {
             <Input id="Modal.Information.Birth" label="Birth day" />
         </Modal.Body>
         <Modal.Footer>
-            <button class="bg-purple-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-purple-600 transition duration-150">OK</button>
+            <Button text="Save" onClick={() => { }} />
         </Modal.Footer>
     </Modal>;
 }
