@@ -22,6 +22,10 @@ export const userSlice = createSlice({
 		setPosition: (state, action) => {
 			state.position = action.payload;
 		},
+		setPersonalInformation: (state, { payload }) => {
+			state.fullname = payload.fullname;
+			state.birth = payload.birth;
+		},
 		setTechnologies: (state, action) => {
 			state.technologies = action.payload;
 		},
@@ -32,6 +36,7 @@ export const {
 	setBirth,
 	setCountry,
 	setFullName,
+	setPersonalInformation,
 	setPosition,
 	setTechnologies,
 } = userSlice.actions;

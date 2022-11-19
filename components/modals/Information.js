@@ -1,21 +1,25 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { setPersonalInformation } from "@store/slices/user";
 
 import Modal from "@components/shared/Modal";
 import Input from "@components/shared/Input";
 import Button from "@components/shared/Button";
 
 const Information = () => {
-	const [fullName, setFullName] = useState("");
+	const dispatch = useDispatch();
+
+	const [fullname, setFullname] = useState("");
 	const [birth, setBirth] = useState("");
 
 	const onSubmit = () => {
-		if (fullName.length && birth.length) {
-			console.log(fullName, birth);
+		if (fullname.length && birth.length) {
+			dispatch(setPersonalInformation({ fullname, birth }));
 		}
 	};
 
 	function handleFullNameChange(e) {
-		setFullName(e.target.value);
+		setFullname(e.target.value);
 	}
 
 	function handleBirthChange(e) {
@@ -29,7 +33,7 @@ const Information = () => {
 				<Input
 					id="Modal.Information.Fullname"
 					label="Full name"
-					value={fullName}
+					value={fullname}
 					onChange={handleFullNameChange}
 				/>
 				<Input
