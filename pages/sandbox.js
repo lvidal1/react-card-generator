@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "@components/Layout";
 import Toolbar from "@components/Toolbar";
 import Area from "@components/Area";
+import Modal from "@components/shared/Modal";
 
 export default function Sandbox() {
 	return (
@@ -13,6 +14,7 @@ export default function Sandbox() {
 				</div>
 				<Toolbar />
 			</div>
+			<Modal />
 		</Layout>
 	);
 }
