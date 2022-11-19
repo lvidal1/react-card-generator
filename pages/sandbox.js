@@ -8,7 +8,7 @@ export default function Sandbox() {
 	return (
 		<Layout>
 			<div className="flex flex-col flex-grow self-stretch">
-				<div className="flex-1">
+				<div className="flex-1 flex">
 					<Area />
 				</div>
 				<Toolbar />
