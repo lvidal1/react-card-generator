@@ -5,7 +5,11 @@ import styles from "@styles/Area.module.css";
 const Area = () => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.layer} id="layer" data-testid="Area.layer"></div>
+			<div
+				className={`${styles.layer} ${styles["bg-layer-purple"]}`}
+				id="layer"
+				data-testid="Area.layer"
+			></div>
 		</div>
 	);
 };

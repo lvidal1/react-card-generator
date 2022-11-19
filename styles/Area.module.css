@@ -3,5 +3,9 @@
 }
 
 .layer {
-	@apply w-4/5 h-96 bg-white;
+	@apply w-4/5 h-96;
+}
+
+.bg-layer-purple {
+	@apply bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500;
 }
