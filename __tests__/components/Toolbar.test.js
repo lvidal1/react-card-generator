@@ -1,11 +1,20 @@
 import { render, screen } from "@testing-library/react"
 import '@testing-library/jest-dom'
+import { Provider } from 'react-redux'
+import configureStore from 'redux-mock-store';
 
 import Toolbar from "@components/Toolbar";
 
 describe('Toolbar', () => {
+
+    const initialState = {};
+    const mockStore = configureStore();
+    let store;
+
     it('renders toolbar buttons', () => {
-        render(<Toolbar />)
+        store = mockStore(initialState);
+
+        render(<Provider store={store}><Toolbar /></Provider>)
 
         const btnInformation = screen.getByTestId("Toolbar.Button.Information");
         expect(btnInformation).toBeInTheDocument()
