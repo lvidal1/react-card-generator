@@ -1,0 +1,15 @@
+.container {
+	@apply flex flex-col items-center gap-2;
+}
+
+.container input[type="checkbox"] {
+	@apply hidden;
+}
+
+.container input[type="checkbox"] + div {
+	@apply w-10 h-10 border border-gray-200 hover:border-purple-400 focus:border-purple-700 cursor-pointer;
+}
+
+.container input[type="checkbox"]:checked + div {
+	@apply border-purple-700;
+}

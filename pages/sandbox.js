@@ -6,6 +6,7 @@ import Layout from "@components/Layout";
 import Toolbar from "@components/Toolbar";
 import Area from "@components/Area";
 import Information from "@components/modals/Information";
+import Position from "@components/modals/Position";
 
 export default function Sandbox() {
 	const personalInfoModal = useSelector((state) => state.modal.personalInfo);
@@ -19,6 +20,7 @@ export default function Sandbox() {
 				<Toolbar />
 			</div>
 			{personalInfoModal.open && <Information></Information>}
+			{true && <Position></Position>}
 		</Layout>
 	);
 }
