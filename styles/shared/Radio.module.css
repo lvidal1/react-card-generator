@@ -1,5 +1,5 @@
 .container {
-	@apply flex flex-col items-center gap-2;
+	@apply flex flex-col items-center gap-2 cursor-pointer;
 }
 
 .container input[type="radio"] {
@@ -7,7 +7,7 @@
 }
 
 .container input[type="radio"] + div {
-	@apply w-10 h-10 border border-gray-200 hover:border-purple-400 focus:border-purple-700 cursor-pointer;
+	@apply w-10 h-10 border border-gray-200 hover:border-purple-400 focus:border-purple-700;
 }
 
 .container input[type="radio"]:checked + div {

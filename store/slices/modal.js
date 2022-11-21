@@ -6,14 +6,20 @@ export const modalSlice = createSlice({
 		personalInfo: {
 			open: false,
 		},
+		position: {
+			open: false,
+		},
 	},
 	reducers: {
 		togglePersonalInfo: (state, action) => {
 			state.personalInfo = { open: action.payload };
 		},
+		togglePosition: (state, action) => {
+			state.position = { open: action.payload };
+		},
 	},
 });
 
-export const { togglePersonalInfo } = modalSlice.actions;
+export const { togglePersonalInfo, togglePosition } = modalSlice.actions;
 
 export default modalSlice.reducer;

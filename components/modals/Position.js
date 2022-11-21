@@ -1,25 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setPosition } from "@store/slices/user";
+import { togglePosition } from "@store/slices/modal";
+import { setPositionList } from "@store/slices/position";
 
 import Modal from "@components/shared/Modal";
 import Radio from "@components/shared/Radio";
 import Button from "@components/shared/Button";
+import { positions } from "../../data";
 
 const Position = () => {
-    return (
-        <Modal>
-            <Modal.Header>Set your position</Modal.Header>
-            <Modal.Body>
-                <div className="flex justify-evenly mt-5">
-                    <Radio id="Position.Position1" label="Position 1" name="position" />
-                    <Radio id="Position.Position2" label="Position 2" name="position" />
-                    <Radio id="Position.Position3" label="Position 3" name="position" />
-                </div>
-            </Modal.Body>
-            <Modal.Footer>
-                <Button text="Save" />
-            </Modal.Footer>
-        </Modal>
-    );
+	const dispatch = useDispatch();
+
+	const [modalPosition, setModalPosition] = useState("");
+	const positionList = useSelector(({ position }) => position.list);
+
+	useEffect(() => {
+		dispatch(setPositionList(positions));
+	}, []);
+
+	const submit = () => {
+		if (modalPosition.length) {
+			dispatch(setPosition(modalPosition));
+			close();
+		}
+	};
+
+	const handlePositionChange = (e) => {
+		setModalPosition(e.target.value);
+	};
+
+	const close = () => {
+		dispatch(togglePosition(false));
+	};
+
+	return (
+		<Modal>
+			<Modal.Header onClose={close}>Set your position</Modal.Header>
+			<Modal.Body>
+				<div className="flex justify-evenly mt-5">
+					{positionList.map(({ id, name }) => (
+						<Radio
+							id={`Position.${id}`}
+							label={name}
+							name="position"
+							onChange={handlePositionChange}
+							value={id}
+						/>
+					))}
+				</div>
+			</Modal.Body>
+			<Modal.Footer>
+				<Button text="Save" onClick={submit} />
+			</Modal.Footer>
+		</Modal>
+	);
 };
 
 export default Position;

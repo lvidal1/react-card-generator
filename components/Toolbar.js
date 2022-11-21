@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { togglePersonalInfo } from "@store/slices/modal";
+import { togglePersonalInfo, togglePosition } from "@store/slices/modal";
 
 import styles from "@styles/Toolbar.module.css";
 
@@ -25,6 +25,7 @@ const Toolbar = () => {
 			<div
 				className={styles.button}
 				data-testid="Toolbar.Button.Position"
+				onClick={() => dispatch(togglePosition(true))}
 			>
 				<a href="#">4</a>
 			</div>

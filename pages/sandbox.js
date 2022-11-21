@@ -10,6 +10,7 @@ import Position from "@components/modals/Position";
 
 export default function Sandbox() {
 	const personalInfoModal = useSelector((state) => state.modal.personalInfo);
+	const positionModal = useSelector((state) => state.modal.position);
 
 	return (
 		<Layout>
@@ -20,7 +21,7 @@ export default function Sandbox() {
 				<Toolbar />
 			</div>
 			{personalInfoModal.open && <Information></Information>}
-			{true && <Position></Position>}
+			{positionModal.open && <Position></Position>}
 		</Layout>
 	);
 }
