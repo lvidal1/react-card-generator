@@ -17,7 +17,7 @@ const Position = () => {
 
 	useEffect(() => {
 		dispatch(setPositionList(positions));
-	}, []);
+	}, [dispatch]);
 
 	const submit = () => {
 		if (modalPosition.length) {
@@ -41,6 +41,7 @@ const Position = () => {
 				<div className="flex justify-evenly mt-5">
 					{positionList.map(({ id, name }) => (
 						<Radio
+							key={`Position.${id}`}
 							id={`Position.${id}`}
 							label={name}
 							name="position"
