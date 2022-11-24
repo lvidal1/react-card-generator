@@ -12,6 +12,7 @@ import Country from "@components/modals/Country";
 export default function Sandbox() {
 	const personalInfoModal = useSelector((state) => state.modal.personalInfo);
 	const positionModal = useSelector((state) => state.modal.position);
+	const countryModal = useSelector((state) => state.modal.country);
 
 	return (
 		<Layout>
@@ -23,7 +24,7 @@ export default function Sandbox() {
 			</div>
 			{personalInfoModal.open && <Information></Information>}
 			{positionModal.open && <Position></Position>}
-			{true && <Country></Country>}
+			{countryModal.open && <Country></Country>}
 		</Layout>
 	);
 }
