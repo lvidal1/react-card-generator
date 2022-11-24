@@ -5,3 +5,11 @@
 .button {
 	@apply w-12 h-12 flex justify-center items-center cursor-pointer text-sand hover:bg-secondary-red rounded-md;
 }
+
+.circleButton {
+	@apply w-12 h-12 bg-white rounded-full cursor-pointer flex justify-center items-center;
+}
+
+.innerCircle {
+	@apply w-10 h-10 border-2 border-primary-red bg-white rounded-full hover:border-4;
+}

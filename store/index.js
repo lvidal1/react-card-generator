@@ -4,6 +4,7 @@ import modalReducer from "./slices/modal";
 import positionReducer from "./slices/position";
 import countryReducer from "./slices/country";
 import technologyReducer from "./slices/technology";
+import photoReducer from "./slices/photo";
 
 export default configureStore({
 	reducer: {
@@ -12,5 +13,6 @@ export default configureStore({
 		position: positionReducer,
 		country: countryReducer,
 		technology: technologyReducer,
+		photo: photoReducer,
 	},
 });
