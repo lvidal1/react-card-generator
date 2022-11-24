@@ -1,5 +1,6 @@
 .container {
-	@apply flex flex-grow justify-center items-center self-stretch bg-secondary-red;
+	@apply flex flex-grow justify-center items-center self-stretch bg-secondary-red 
+	bg-gradient-to-tr from-secondary-red to-primary-red;
 }
 
 .layer {
@@ -7,5 +8,5 @@
 }
 
 .bg-layer-purple {
-	@apply bg-secondary-red border-8 border-sand;
+	@apply bg-transparent border-8 border-sand;
 }
