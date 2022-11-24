@@ -2,9 +2,9 @@ import React from "react";
 
 import styles from "@styles/shared/Radio.module.css";
 
-const Radio = ({ id, label, name, onChange, value }) => {
+const Radio = ({ id, label, name, onChange, value, title }) => {
 	return (
-		<label htmlFor={id} className={styles.container}>
+		<label htmlFor={id} className={styles.container} title={title}>
 			<input
 				id={id}
 				name={name}

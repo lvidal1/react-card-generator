@@ -9,6 +9,9 @@ export const modalSlice = createSlice({
 		position: {
 			open: false,
 		},
+		country: {
+			open: false,
+		},
 	},
 	reducers: {
 		togglePersonalInfo: (state, action) => {
@@ -17,9 +20,13 @@ export const modalSlice = createSlice({
 		togglePosition: (state, action) => {
 			state.position = { open: action.payload };
 		},
+		toggleCountry: (state, action) => {
+			state.country = { open: action.payload };
+		},
 	},
 });
 
-export const { togglePersonalInfo, togglePosition } = modalSlice.actions;
+export const { togglePersonalInfo, togglePosition, toggleCountry } =
+	modalSlice.actions;
 
 export default modalSlice.reducer;
