@@ -5,6 +5,7 @@ import {
 	togglePosition,
 	toggleCountry,
 	toggleTechnology,
+	togglePhotoChooser,
 } from "@store/slices/modal";
 
 import styles from "@styles/Toolbar.module.css";
@@ -28,7 +29,11 @@ const Toolbar = () => {
 			>
 				<a href="#">2</a>
 			</div>
-			<div className={styles.circleButton} data-testid="Toolbar.Button.Photo">
+			<div
+				className={styles.circleButton}
+				data-testid="Toolbar.Button.Photo"
+				onClick={() => dispatch(togglePhotoChooser(true))}
+			>
 				<div className={styles.innerCircle}><a href="#"></a></div>
 
 			</div>

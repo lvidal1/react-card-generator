@@ -15,6 +15,9 @@ export const modalSlice = createSlice({
 		technology: {
 			open: false,
 		},
+		photoChooser: {
+			open: false,
+		},
 	},
 	reducers: {
 		togglePersonalInfo: (state, action) => {
@@ -26,8 +29,8 @@ export const modalSlice = createSlice({
 		toggleCountry: (state, action) => {
 			state.country = { open: action.payload };
 		},
-		toggleTechnology: (state, action) => {
-			state.technology = { open: action.payload };
+		togglePhotoChooser: (state, action) => {
+			state.photoChooser = { open: action.payload };
 		},
 	},
 });
@@ -37,6 +40,7 @@ export const {
 	togglePosition,
 	toggleCountry,
 	toggleTechnology,
+	togglePhotoChooser,
 } = modalSlice.actions;
 
 export default modalSlice.reducer;
