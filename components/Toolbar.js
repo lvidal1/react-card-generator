@@ -28,8 +28,9 @@ const Toolbar = () => {
 			>
 				<a href="#">2</a>
 			</div>
-			<div className={styles.button} data-testid="Toolbar.Button.Photo">
-				<a href="#">3</a>
+			<div className={styles.circleButton} data-testid="Toolbar.Button.Photo">
+				<div className={styles.innerCircle}><a href="#"></a></div>
+
 			</div>
 			<div
 				className={styles.button}

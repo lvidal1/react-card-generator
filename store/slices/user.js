@@ -8,6 +8,7 @@ export const userSlice = createSlice({
 		position: "FrontEnd",
 		country: "PE",
 		technologies: ["python", "js", "css", "react"],
+		photo: null,
 	},
 	reducers: {
 		setBirth: (state, action) => {
@@ -29,6 +30,9 @@ export const userSlice = createSlice({
 		setTechnologies: (state, action) => {
 			state.technologies = action.payload;
 		},
+		setPhoto: (state, action) => {
+			state.photo = action.payload;
+		},
 	},
 });
 
@@ -39,6 +43,7 @@ export const {
 	setPersonalInformation,
 	setPosition,
 	setTechnologies,
+	setPhoto,
 } = userSlice.actions;
 
 export default userSlice.reducer;
