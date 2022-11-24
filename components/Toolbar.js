@@ -4,6 +4,7 @@ import {
 	togglePersonalInfo,
 	togglePosition,
 	toggleCountry,
+	toggleTechnology,
 } from "@store/slices/modal";
 
 import styles from "@styles/Toolbar.module.css";
@@ -40,6 +41,7 @@ const Toolbar = () => {
 			<div
 				className={styles.button}
 				data-testid="Toolbar.Button.Technologies"
+				onClick={() => dispatch(toggleTechnology(true))}
 			>
 				<a href="#">5</a>
 			</div>
