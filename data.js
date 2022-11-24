@@ -1011,3 +1011,18 @@ export const countries = [
 		name: "Zimbabwe",
 	},
 ];
+
+export const technologies = [
+	{
+		id: "python",
+		name: "Python",
+	},
+	{
+		id: "react",
+		name: "React",
+	},
+	{
+		id: "javascript",
+		name: "Javascript",
+	},
+];
