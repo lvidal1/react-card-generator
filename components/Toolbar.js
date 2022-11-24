@@ -34,8 +34,9 @@ const Toolbar = () => {
 				data-testid="Toolbar.Button.Photo"
 				onClick={() => dispatch(togglePhotoChooser(true))}
 			>
-				<div className={styles.innerCircle}><a href="#"></a></div>
-
+				<div className={styles.innerCircle}>
+					<a href="#"></a>
+				</div>
 			</div>
 			<div
 				className={styles.button}

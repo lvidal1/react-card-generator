@@ -10,59 +10,59 @@ import Button from "@components/shared/Button";
 import { technologies } from "data";
 
 const Technology = () => {
-    const dispatch = useDispatch();
+	const dispatch = useDispatch();
 
-    const [modalTechnology, setModalTechnology] = useState([]);
-    const technologyList = useSelector(({ technology }) => technology.list);
+	const [modalTechnology, setModalTechnology] = useState([]);
+	const technologyList = useSelector(({ technology }) => technology.list);
 
-    useEffect(() => {
-        dispatch(setTechnologyList(technologies));
-    }, []);
+	useEffect(() => {
+		dispatch(setTechnologyList(technologies));
+	}, []);
 
-    const submit = () => {
-        if (modalTechnology.length) {
-            dispatch(setTechnologies(modalTechnology));
-            close();
-        }
-    };
+	const submit = () => {
+		if (modalTechnology.length) {
+			dispatch(setTechnologies(modalTechnology));
+			close();
+		}
+	};
 
-    const handleTechnologyChange = (e) => {
-        if (e.target.checked === true) {
-            setModalTechnology([...modalTechnology, e.target.value]);
-        } else {
-            const selectedAcc = modalTechnology.filter((a) => {
-                if (a === e.target.value) return false;
-                return true;
-            });
-            setModalTechnology([...selectedAcc]);
-        }
-    };
+	const handleTechnologyChange = (e) => {
+		if (e.target.checked === true) {
+			setModalTechnology([...modalTechnology, e.target.value]);
+		} else {
+			const selectedAcc = modalTechnology.filter((a) => {
+				if (a === e.target.value) return false;
+				return true;
+			});
+			setModalTechnology([...selectedAcc]);
+		}
+	};
 
-    const close = () => {
-        dispatch(toggleTechnology(false));
-    };
+	const close = () => {
+		dispatch(toggleTechnology(false));
+	};
 
-    return (
-        <Modal>
-            <Modal.Header onClose={close}>Set your technology</Modal.Header>
-            <Modal.Body>
-                <div className="flex justify-evenly mt-5">
-                    {technologyList.map(({ id, name }) => (
-                        <Checkbox
-                            key={`Technology.${id}`}
-                            id={`Technology.${id}`}
-                            name="technology"
-                            onChange={handleTechnologyChange}
-                            value={id}
-                        />
-                    ))}
-                </div>
-            </Modal.Body>
-            <Modal.Footer>
-                <Button text="Save" onClick={submit} />
-            </Modal.Footer>
-        </Modal>
-    );
+	return (
+		<Modal>
+			<Modal.Header onClose={close}>Set your technology</Modal.Header>
+			<Modal.Body>
+				<div className="flex justify-evenly mt-5">
+					{technologyList.map(({ id, name }) => (
+						<Checkbox
+							key={`Technology.${id}`}
+							id={`Technology.${id}`}
+							name="technology"
+							onChange={handleTechnologyChange}
+							value={id}
+						/>
+					))}
+				</div>
+			</Modal.Body>
+			<Modal.Footer>
+				<Button text="Save" onClick={submit} />
+			</Modal.Footer>
+		</Modal>
+	);
 };
 
 export default Technology;
