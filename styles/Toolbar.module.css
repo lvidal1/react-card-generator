@@ -1,7 +1,7 @@
 .toolbar {
-	@apply w-full flex justify-between p-5;
+	@apply w-full flex justify-between p-5 bg-primary-red;
 }
 
 .button {
-	@apply w-12 h-12 flex justify-center items-center bg-purple-100 cursor-pointer;
+	@apply w-12 h-12 flex justify-center items-center cursor-pointer text-sand hover:bg-secondary-red rounded-md;
 }
