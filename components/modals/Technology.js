@@ -17,7 +17,7 @@ const Technology = () => {
 
 	useEffect(() => {
 		dispatch(setTechnologyList(technologies));
-	}, []);
+	}, [dispatch]);
 
 	const submit = () => {
 		if (modalTechnology.length) {
