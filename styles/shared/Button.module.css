@@ -1,3 +1,7 @@
 .btn-success {
-	@apply bg-primary-red mr-1 rounded text-sm py-2 px-3 text-white hover:bg-secondary-red transition duration-150;
+	@apply bg-primary-red rounded text-sm py-2 px-3 text-white hover:bg-secondary-red transition duration-150;
+}
+
+.btn-link {
+	@apply text-sm py-2 px-3 text-primary-red hover:bg-sand transition duration-150 rounded;
 }
