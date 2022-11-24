@@ -4,7 +4,7 @@
 }
 
 .layer {
-	@apply w-4/5 h-96;
+	@apply w-4/5 h-96 max-h-96;
 }
 
 .bg-layer-purple {
