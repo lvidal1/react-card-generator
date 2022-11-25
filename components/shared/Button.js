@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "@styles/shared/Button.module.css";
 
-const Button = ({ text, onClick, variant }) => {
+const Button = ({ children, text, onClick, variant }) => {
 	return (
 		<button
 			className={
@@ -10,7 +10,7 @@ const Button = ({ text, onClick, variant }) => {
 			}
 			onClick={onClick}
 		>
-			{text}
+			{children || text}
 		</button>
 	);
 };
