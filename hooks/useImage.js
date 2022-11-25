@@ -1,14 +1,20 @@
+import { useDispatch } from "react-redux";
+
 import { processImageFile } from "@utils/image"
+import { setRawPhoto, resetRawPhoto } from "@store/slices/photo";
 
 const useImage = () => {
+    const dispatch = useDispatch();
 
     /**
-     * This function takes a file object, and returns a promise that resolves to an image object.
-     * @param file - The file object that you get from the input element.
+     * This function takes a file, processes it, and then dispatches the processed file to the redux
+     * store.
+     * @param file - The file object that is returned from the file input
      */
     const readImageFromDevice = async (file) => {
+        dispatch(resetRawPhoto());
         const image = await processImageFile(file)
-        console.log(image)
+        dispatch(setRawPhoto(image));
     }
 
     return {

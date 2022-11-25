@@ -41,8 +41,8 @@ const loadImageAsync = (source, type) => {
  */
 const resize = (image, type) => {
     // Dynamically create a canvas element
-    const MAX_WIDTH = 300;
-    const MAX_HEIGHT = 300;
+    const MAX_WIDTH = 500;
+    const MAX_HEIGHT = 500;
 
     let width = image.width;
     let height = image.height;

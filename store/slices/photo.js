@@ -9,9 +9,12 @@ export const photoSlice = createSlice({
 		setRawPhoto: (state, action) => {
 			state.raw = action.payload;
 		},
+		resetRawPhoto: (state) => {
+			state.raw = null;
+		},
 	},
 });
 
-export const { setRawPhoto } = photoSlice.actions;
+export const { setRawPhoto, resetRawPhoto } = photoSlice.actions;
 
 export default photoSlice.reducer;

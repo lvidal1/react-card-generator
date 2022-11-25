@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { togglePhotoChooser } from "@store/slices/modal";
 
 import Modal from "@components/shared/Modal";
@@ -8,6 +8,7 @@ import UploadControl from "@components/photo/UploadControl";
 
 const Chooser = () => {
     const dispatch = useDispatch();
+    const raw = useSelector((state) => state.photo.raw);
 
     const close = () => {
         dispatch(togglePhotoChooser(false));
@@ -24,6 +25,8 @@ const Chooser = () => {
                     </Button>
                     <Button text="Take a picture" variant="link" />
                 </div>
+                <hr className="my-5" />
+                {raw && <img src={raw} className="w-full" />}
             </Modal.Body>
         </Modal>
     );
