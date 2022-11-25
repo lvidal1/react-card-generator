@@ -16,7 +16,7 @@ const CameraControl = ({ children }) => {
 		readImageFromCamera(dataUri);
 	};
 
-	const [fullScreen, setFullScreen] = useState(false);
+	const [fullScreen] = useState(false);
 
 	return (
 		<>
