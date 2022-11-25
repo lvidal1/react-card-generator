@@ -1,3 +1,9 @@
+/**
+ * It takes a file, reads it as a data URL, and returns a promise that resolves with an object
+ * containing file information
+ * @param file - The file to read
+ * @returns A promise that resolves to an object with the file data, name, size, and type.
+ */
 const readFileAsync = (file) => {
     return new Promise((resolve, reject) => {
         let reader = new FileReader();
@@ -9,10 +15,16 @@ const readFileAsync = (file) => {
     })
 }
 
+/**
+ * Create a new Promise that resolves with a dataurl of the resized image when the image has loaded.
+ * @param source - The image source (either a data URL or a URL pointing to an image)
+ * @param type - The type of the image.
+ * @returns A promise that resolves to a dataurl.
+ */
 const loadImageAsync = (source, type) => {
     return new Promise((resolve, reject) => {
         const image = document.createElement("img");
-        image.onload = function (event) {
+        image.onload = function () {
             const dataurl = resize(image, type);
             resolve(dataurl);
         }
@@ -20,6 +32,13 @@ const loadImageAsync = (source, type) => {
     })
 }
 
+/**
+ * Resize an image
+ * @param image - The image element to resize
+ * @param type - The type of the image.
+ * @returns A data URL representing the image in the format specified by the type parameter (defaults
+ * to PNG).
+ */
 const resize = (image, type) => {
     // Dynamically create a canvas element
     const MAX_WIDTH = 300;
@@ -51,6 +70,11 @@ const resize = (image, type) => {
     return canvas.toDataURL(type);
 }
 
+/**
+ * It takes a file, reads it, and then loads it into an image object (resize).
+ * @param file - The file object that you get from the input element.
+ * @returns The image data is being returned.
+ */
 export const processImageFile = async (file) => {
 
     try {
