@@ -88,3 +88,16 @@ export const processImageFile = async (file) => {
 		console.log(err);
 	}
 };
+
+/**
+ * It takes a file, reads it, and then loads it into an image object (resize).
+ * @param file - The file object that you get from the input element.
+ * @returns The image data is being returned.
+ */
+export const processImageUri = async (dataUri) => {
+	try {
+		return await loadImageAsync(dataUri, "image/jpeg");
+	} catch (err) {
+		console.log(err);
+	}
+};
