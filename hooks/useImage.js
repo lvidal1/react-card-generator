@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 
-import { processImageFile } from "@utils/image";
+import { processImageFile, processImageUri } from "@utils/image";
 import { setRawPhoto, resetRawPhoto } from "@store/slices/photo";
 
 const useImage = () => {
@@ -17,8 +17,15 @@ const useImage = () => {
 		dispatch(setRawPhoto(image));
 	};
 
+	const readImageFromCamera = async (data) => {
+		dispatch(resetRawPhoto());
+		const image = await processImageUri(data);
+		dispatch(setRawPhoto(image));
+	};
+
 	return {
 		readImageFromDevice,
+		readImageFromCamera,
 	};
 };
 

@@ -1,0 +1,6 @@
+.cameraControl {
+	@apply max-w-md mx-auto flex;
+}
+.cameraControl :global .react-html5-camera-photo {
+	position: initial;
+}
