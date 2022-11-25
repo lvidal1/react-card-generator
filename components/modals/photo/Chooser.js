@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { togglePhotoChooser } from "@store/slices/modal";
+import Image from "next/image";
 
 import Modal from "@components/shared/Modal";
 import Button from "@components/shared/Button";
@@ -28,7 +29,15 @@ const Chooser = () => {
 					</Button>
 				</div>
 				<hr className="my-5" />
-				{raw && <img src={raw} className="w-full" />}
+				{raw && (
+					<Image
+						src={raw}
+						width="300"
+						height="500"
+						alt="Landscape picture"
+						className="w-full"
+					/>
+				)}
 			</Modal.Body>
 		</Modal>
 	);
