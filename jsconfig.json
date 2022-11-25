@@ -8,7 +8,9 @@
 			"@pages/*": ["/pages/*"],
 			"@components/*": ["/components/*"],
 			"@styles/*": ["/styles/*"],
-			"@store/*": ["/store/*"]
+			"@store/*": ["/store/*"],
+			"@hooks/*": ["/hooks/*"],
+			"@utils/*": ["/utils/*"]
 		}
 	},
 	"exclude": ["node_modules"]

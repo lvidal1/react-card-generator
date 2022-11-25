@@ -20,6 +20,8 @@ const customJestConfig = {
         '^@pages/(.*)$': '<rootDir>/pages/$1',
         '^@styles/(.*)$': '<rootDir>/styles/$1',
         '^@store/(.*)$': '<rootDir>/store/$1',
+        '^@hooks/(.*)$': '<rootDir>/hooks/$1',
+        '^@utils/(.*)$': '<rootDir>/utils/$1',
 
 
     },
