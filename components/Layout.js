@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
 				<meta name="description" content="Card generator" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className="max-w-md mx-auto min-h-screen flex flex-col">
+			<div className="fixed min-h-full w-full max-w-md mx-auto flex flex-col">
 				<Header />
 				<main className="flex-1 flex relative">{children}</main>
 			</div>
