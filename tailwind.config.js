@@ -11,6 +11,9 @@ module.exports = {
 				"secondary-red": "#4D041B",
 				sand: "#E7DEDE",
 			},
+			width: {
+				'4.5': '1.125rem',
+			}
 		},
 	},
 	plugins: [],
