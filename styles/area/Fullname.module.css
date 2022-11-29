@@ -1,0 +1,25 @@
+.container {
+	@apply flex justify-center w-11/12 mx-auto;
+}
+
+.name {
+	@apply block-shadow leading-normal tracking-tighter text-base text-primary-red font-bold uppercase text-center bg-white py-1 px-4 flex-grow;
+}
+
+.ribbonDecorator {
+	@apply w-4.5;
+}
+
+.block-shadow {
+	box-shadow: 0.5px 6px 1px 0px rgb(0 0 0 / 60%);
+	-webkit-box-shadow: 0.5px 6px 1px 0px rgb(0 0 0 / 60%);
+	-moz-box-shadow: 0.5px 6px 1px 0px rgb(0 0 0 / 60%);
+}
+
+.blocks {
+	@apply grid grid-cols-3;
+}
+
+.block {
+	@apply w-1.5 h-1.5 bg-white block-shadow;
+}
