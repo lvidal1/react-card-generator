@@ -4,9 +4,10 @@ import styles from "@styles/Area.module.css";
 import { useSelector } from "react-redux";
 
 import Fullname from "./area/Fullname";
+import Birthday from "./area/Birthday";
 
 const Area = () => {
-	const { fullname } = useSelector((state) => state.user);
+	const { fullname, birth } = useSelector((state) => state.user);
 
 	return (
 		<div className={styles.container}>
@@ -16,6 +17,7 @@ const Area = () => {
 				data-testid="Area.layer"
 			>
 				<Fullname text={fullname} />
+				<Birthday text={birth} classname="mt-1.5" />
 			</div>
 		</div>
 	);
