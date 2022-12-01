@@ -61,10 +61,9 @@ const Country = () => {
 								.includes(searchCountry.toLowerCase())
 						)
 						.map(({ id, name }) => (
-							<span>
+							<span key={`Country.Option.${id}`}>
 								<Radio
-									key={`Country.${id}`}
-									id={`Country.${id}`}
+									id={`Country.Option.${id}`}
 									name="Country"
 									onChange={handleCountryChange}
 									value={id}
