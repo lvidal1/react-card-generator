@@ -1,0 +1,7 @@
+.flag {
+	@apply w-10 h-7;
+}
+
+.flagOption div {
+	border: 0;
+}

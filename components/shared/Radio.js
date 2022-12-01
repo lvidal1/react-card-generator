@@ -1,10 +1,24 @@
 import React from "react";
 
 import styles from "@styles/shared/Radio.module.css";
+import classNames from "classnames";
 
-const Radio = ({ id, label, name, onChange, value, title }) => {
+const Radio = ({
+	id,
+	label,
+	name,
+	onChange,
+	value,
+	title,
+	children,
+	className,
+}) => {
 	return (
-		<label htmlFor={id} className={styles.container} title={title}>
+		<label
+			htmlFor={id}
+			className={classNames(styles.container, className)}
+			title={title}
+		>
 			<input
 				id={id}
 				name={name}
@@ -12,7 +26,7 @@ const Radio = ({ id, label, name, onChange, value, title }) => {
 				type="radio"
 				value={value}
 			/>
-			<div className={styles.control}></div>
+			<div className={styles.control}>{children}</div>
 			<div className="text-sm w-14 text-center">{label}</div>
 		</label>
 	);
