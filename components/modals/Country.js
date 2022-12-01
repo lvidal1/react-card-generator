@@ -9,6 +9,9 @@ import Button from "@components/shared/Button";
 import Radio from "components/shared/Radio";
 import Input from "components/shared/Input";
 import { countries } from "data";
+import classNames from "classnames";
+
+import styles from "@styles/modals/Country.module.css";
 
 const Country = () => {
 	const dispatch = useDispatch();
@@ -58,14 +61,24 @@ const Country = () => {
 								.includes(searchCountry.toLowerCase())
 						)
 						.map(({ id, name }) => (
-							<Radio
-								key={`Country.${id}`}
-								id={`Country.${id}`}
-								name="Country"
-								onChange={handleCountryChange}
-								value={id}
-								title={name}
-							/>
+							<span key={`Country.Option.${id}`}>
+								<Radio
+									id={`Country.Option.${id}`}
+									name="Country"
+									onChange={handleCountryChange}
+									value={id}
+									title={name}
+									className={styles.flagOption}
+								>
+									<span
+										className={classNames(
+											"fi",
+											`fi-${id.toLowerCase()}`,
+											styles.flag
+										)}
+									></span>
+								</Radio>
+							</span>
 						))}
 				</div>
 			</Modal.Body>

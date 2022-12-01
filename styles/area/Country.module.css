@@ -1,0 +1,11 @@
+.container {
+	@apply bg-white p-0.5 inline-block;
+}
+
+.name {
+	@apply text-center block text-primary-red font-bold uppercase leading-3 text-sm;
+}
+
+.flag {
+	@apply w-12 h-9;
+}

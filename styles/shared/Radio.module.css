@@ -3,13 +3,18 @@
 }
 
 .container input[type="radio"] {
-	@apply hidden;
+	@apply absolute;
+	left: -9999px;
 }
 
 .container input[type="radio"] + div {
-	@apply w-10 h-10 border border-gray-200 hover:border-primary-red focus:border-primary-red;
+	@apply opacity-50 hover:opacity-100 focus:opacity-100;
+}
+
+.container input[type="radio"]:focus:not(:checked) + div {
+	@apply opacity-100;
 }
 
 .container input[type="radio"]:checked + div {
-	@apply border-primary-red;
+	@apply opacity-100;
 }
