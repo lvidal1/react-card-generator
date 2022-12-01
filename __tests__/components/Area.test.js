@@ -15,7 +15,7 @@ describe('Area', () => {
     it('renders area layer', () => {
         store = mockStore(initialState);
         createArea({ store })
-        screen.getByTestId("Area.layer");
+        const layer = screen.getByTestId("Area.layer");
         expect(layer).toBeInTheDocument()
     })
 })
