@@ -1,26 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setTechnologies } from "@store/slices/user";
 import { toggleTechnology } from "@store/slices/modal";
-import { setTechnologyList } from "@store/slices/technology";
 
 import Modal from "@components/shared/Modal";
 import Checkbox from "@components/shared/Checkbox";
 import Button from "@components/shared/Button";
-import { technologies } from "data";
+import Input from "@components/shared/Input";
+
+import styles from "@styles/modals/Technology.module.css";
+import classNames from "classnames";
 
 const Technology = () => {
 	const dispatch = useDispatch();
 
+	const MAX_ALLOWED = 6;
+
 	const [modalTechnology, setModalTechnology] = useState([]);
+	const [searchTech, setSearchTech] = useState("");
 	const technologyList = useSelector(({ technology }) => technology.list);
 
-	useEffect(() => {
-		dispatch(setTechnologyList(technologies));
-	}, [dispatch]);
-
 	const submit = () => {
-		if (modalTechnology.length) {
+		if (modalTechnology.length && !selectionIsFull()) {
 			dispatch(setTechnologies(modalTechnology));
 			close();
 		}
@@ -38,24 +39,91 @@ const Technology = () => {
 		}
 	};
 
+	const handleSearchTechChange = (e) => {
+		setSearchTech(e.target.value);
+	};
+
 	const close = () => {
 		dispatch(toggleTechnology(false));
+	};
+
+	const clear = () => {
+		setModalTechnology([]);
+	};
+
+	const getRemainingOptions = () => MAX_ALLOWED - modalTechnology.length;
+
+	const selectionIsFull = () => getRemainingOptions() < 0;
+
+	const getMessage = (remaining) => {
+		if (remaining < 0) {
+			return `You just can select ${MAX_ALLOWED} options`;
+		}
+		if (remaining === 0) {
+			return "Yei! Your stack is complete";
+		}
+		if (remaining === 1) {
+			return "You have 1 more option";
+		} else {
+			return `You have ${remaining} more options`;
+		}
 	};
 
 	return (
 		<Modal>
 			<Modal.Header onClose={close}>Set your technology</Modal.Header>
 			<Modal.Body>
-				<div className="flex justify-evenly mt-5">
-					{technologyList.map(({ id, name }) => (
-						<Checkbox
-							key={`Technology.${id}`}
-							id={`Technology.${id}`}
-							name="technology"
-							onChange={handleTechnologyChange}
-							value={id}
-						/>
-					))}
+				<Input
+					id="Modal.Technology.Name"
+					label="Search..."
+					value={searchTech}
+					onChange={handleSearchTechChange}
+				/>
+				<div className="flex mb-3 ">
+					<div
+						className={classNames(
+							"font-bold grow",
+							selectionIsFull() ? "text-primary-red" : ""
+						)}
+					>
+						{getMessage(getRemainingOptions())}
+					</div>
+					<div
+						className={classNames(
+							"text-xs flex items-center",
+							modalTechnology.length > 0 ? "" : "hidden"
+						)}
+						onClick={clear}
+					>
+						<span className="block">Clear x</span>
+					</div>
+				</div>
+				<div className="flex justify-evenly mt-5 flex-wrap overflow-y-scroll h-64">
+					{technologyList
+						.filter(({ id }) =>
+							id.includes(searchTech.toLowerCase())
+						)
+						.map(({ id, name, version }) => (
+							<span key={`Technology.Option.${id}`}>
+								<Checkbox
+									key={`Technology.${id}`}
+									id={`Technology.${id}`}
+									name="technology"
+									onChange={handleTechnologyChange}
+									value={id}
+									title={name}
+									className={styles.logoOption}
+									checked={modalTechnology.includes(id)}
+								>
+									<i
+										className={classNames(
+											`devicon-${id}-${version} colored`,
+											styles.logo
+										)}
+									></i>
+								</Checkbox>
+							</span>
+						))}
 				</div>
 			</Modal.Body>
 			<Modal.Footer>

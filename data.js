@@ -1014,15 +1014,2490 @@ export const countries = [
 
 export const technologies = [
 	{
-		id: "python",
-		name: "Python",
+		"id": "adonisjs",
+		"name": "Adonisjs",
+		"version": "original",
+		"tags": [
+			"nodejs",
+			"framework"
+		]
 	},
 	{
-		id: "react",
-		name: "React",
+		"id": "aftereffects",
+		"name": "Aftereffects",
+		"version": "plain",
+		"tags": [
+			"video",
+			"editor"
+		]
 	},
 	{
-		id: "javascript",
-		name: "Javascript",
+		"id": "amazonwebservices",
+		"name": "Amazonwebservices",
+		"version": "original",
+		"tags": [
+			"cloud",
+			"hosting",
+			"server"
+		]
 	},
-];
+	{
+		"id": "android",
+		"name": "Android",
+		"version": "plain",
+		"tags": [
+			"os",
+			"mobile"
+		]
+	},
+	{
+		"id": "androidstudio",
+		"name": "Androidstudio",
+		"version": "plain",
+		"tags": [
+			"application",
+			"editor",
+			"ide",
+			"android",
+			"mobile"
+		]
+	},
+	{
+		"id": "aarch64",
+		"name": "Aarch64",
+		"version": "plain",
+		"tags": [
+			"architecture",
+			"programming",
+			"language",
+			"ARM"
+		]
+	},
+	{
+		"id": "angularjs",
+		"name": "Angularjs",
+		"version": "plain",
+		"tags": [
+			"framework",
+			"javascript"
+		]
+	},
+	{
+		"id": "ansible",
+		"name": "Ansible",
+		"version": "plain",
+		"tags": [
+			"automation",
+			"provisioning",
+			"deployment",
+			"continuous-delivery"
+		]
+	},
+	{
+		"id": "apache",
+		"name": "Apache",
+		"version": "plain",
+		"tags": [
+			"php"
+		]
+	},
+	{
+		"id": "apachekafka",
+		"name": "Apachekafka",
+		"version": "original",
+		"tags": [
+			"streaming",
+			"open-source"
+		]
+	},
+	{
+		"id": "appcelerator",
+		"name": "Appcelerator",
+		"version": "original",
+		"tags": [
+			"app",
+			"mobile"
+		]
+	},
+	{
+		"id": "apple",
+		"name": "Apple",
+		"version": "original",
+		"tags": [
+			"brand",
+			"mobile"
+		]
+	},
+	{
+		"id": "appwrite",
+		"name": "Appwrite",
+		"version": "plain",
+		"tags": [
+			"cloud",
+			"platform",
+			"server"
+		]
+	},
+	{
+		"id": "arduino",
+		"name": "Arduino",
+		"version": "plain",
+		"tags": [
+			"microcontroller",
+			"hardware"
+		]
+	},
+	{
+		"id": "atom",
+		"name": "Atom",
+		"version": "original",
+		"tags": [
+			"editor"
+		]
+	},
+	{
+		"id": "azure",
+		"name": "Azure",
+		"version": "plain",
+		"tags": [
+			"cloud",
+			"devops"
+		]
+	},
+	{
+		"id": "babel",
+		"name": "Babel",
+		"version": "plain",
+		"tags": [
+			"javascript",
+			"transpiler"
+		]
+	},
+	{
+		"id": "backbonejs",
+		"name": "Backbonejs",
+		"version": "plain",
+		"tags": [
+			"javascript",
+			"framework"
+		]
+	},
+	{
+		"id": "bamboo",
+		"name": "Bamboo",
+		"version": "original",
+		"tags": [
+			"platform",
+			"integration",
+			"server"
+		]
+	},
+	{
+		"id": "bash",
+		"name": "Bash",
+		"version": "plain",
+		"tags": [
+			"shell",
+			"command"
+		]
+	},
+	{
+		"id": "behance",
+		"name": "Behance",
+		"version": "plain",
+		"tags": [
+			"social",
+			"website"
+		]
+	},
+	{
+		"id": "bitbucket",
+		"name": "Bitbucket",
+		"version": "original",
+		"tags": [
+			"version-control"
+		]
+	},
+	{
+		"id": "bootstrap",
+		"name": "Bootstrap",
+		"version": "plain",
+		"tags": [
+			"css",
+			"framework"
+		]
+	},
+	{
+		"id": "bulma",
+		"name": "Bulma",
+		"version": "plain",
+		"tags": [
+			"css",
+			"framework"
+		]
+	},
+	{
+		"id": "bower",
+		"name": "Bower",
+		"version": "plain",
+		"tags": [
+			"package",
+			"manager"
+		]
+	},
+	{
+		"id": "c",
+		"name": "C",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "cakephp",
+		"name": "Cakephp",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "canva",
+		"name": "Canva",
+		"version": "original",
+		"tags": [
+			"design"
+		]
+	},
+	{
+		"id": "centos",
+		"name": "Centos",
+		"version": "plain",
+		"tags": [
+			"server",
+			"linux"
+		]
+	},
+	{
+		"id": "ceylon",
+		"name": "Ceylon",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "chrome",
+		"name": "Chrome",
+		"version": "plain",
+		"tags": [
+			"browser"
+		]
+	},
+	{
+		"id": "circleci",
+		"name": "Circleci",
+		"version": "plain",
+		"tags": [
+			"integration",
+			"platform"
+		]
+	},
+	{
+		"id": "clojure",
+		"name": "Clojure",
+		"version": "line",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "cmake",
+		"name": "Cmake",
+		"version": "plain",
+		"tags": [
+			"build"
+		]
+	},
+	{
+		"id": "clojurescript",
+		"name": "Clojurescript",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "codecov",
+		"name": "Codecov",
+		"version": "plain",
+		"tags": [
+			"platform",
+			"integration"
+		]
+	},
+	{
+		"id": "codeigniter",
+		"name": "Codeigniter",
+		"version": "plain",
+		"tags": [
+			"php",
+			"framework"
+		]
+	},
+	{
+		"id": "codepen",
+		"name": "Codepen",
+		"version": "plain",
+		"tags": [
+			"social",
+			"website",
+			"editor"
+		]
+	},
+	{
+		"id": "coffeescript",
+		"name": "Coffeescript",
+		"version": "original",
+		"tags": [
+			"javascript",
+			"language"
+		]
+	},
+	{
+		"id": "composer",
+		"name": "Composer",
+		"version": "line",
+		"tags": [
+			"package",
+			"manager",
+			"php"
+		]
+	},
+	{
+		"id": "confluence",
+		"name": "Confluence",
+		"version": "original",
+		"tags": [
+			"collaboration",
+			"documentation",
+			"wiki"
+		]
+	},
+	{
+		"id": "couchdb",
+		"name": "Couchdb",
+		"version": "plain",
+		"tags": [
+			"database"
+		]
+	},
+	{
+		"id": "cplusplus",
+		"name": "Cplusplus",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "csharp",
+		"name": "Csharp",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "css3",
+		"name": "Css3",
+		"version": "plain",
+		"tags": [
+			"language",
+			"programming"
+		]
+	},
+	{
+		"id": "cucumber",
+		"name": "Cucumber",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "crystal",
+		"name": "Crystal",
+		"version": "original",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "d3js",
+		"name": "D3js",
+		"version": "plain",
+		"tags": []
+	},
+	{
+		"id": "dart",
+		"name": "Dart",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "debian",
+		"name": "Debian",
+		"version": "plain",
+		"tags": [
+			"os",
+			"server"
+		]
+	},
+	{
+		"id": "denojs",
+		"name": "Denojs",
+		"version": "original",
+		"tags": [
+			"javascript",
+			"rust",
+			"language"
+		]
+	},
+	{
+		"id": "devicon",
+		"name": "Devicon",
+		"version": "plain",
+		"tags": [
+			"iconset"
+		]
+	},
+	{
+		"id": "django",
+		"name": "Django",
+		"version": "plain",
+		"tags": []
+	},
+	{
+		"id": "docker",
+		"name": "Docker",
+		"version": "plain",
+		"tags": [
+			"platform",
+			"deploy"
+		]
+	},
+	{
+		"id": "doctrine",
+		"name": "Doctrine",
+		"version": "plain",
+		"tags": []
+	},
+	{
+		"id": "dot-net",
+		"name": "Dot-net",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "dotnetcore",
+		"name": "Dotnetcore",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "drupal",
+		"name": "Drupal",
+		"version": "plain",
+		"tags": [
+			"cms"
+		]
+	},
+	{
+		"id": "digitalocean",
+		"name": "Digitalocean",
+		"version": "plain",
+		"tags": [
+			"cloud",
+			"hosting",
+			"database",
+			"storage"
+		]
+	},
+	{
+		"id": "discordjs",
+		"name": "Discordjs",
+		"version": "plain",
+		"tags": [
+			"wrapper",
+			"api_wrapper",
+			"nodejs"
+		]
+	},
+	{
+		"id": "electron",
+		"name": "Electron",
+		"version": "original",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "eleventy",
+		"name": "Eleventy",
+		"version": "plain",
+		"tags": [
+			"ssg",
+			"static site generator"
+		]
+	},
+	{
+		"id": "elixir",
+		"name": "Elixir",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "elm",
+		"name": "Elm",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "ember",
+		"name": "Ember",
+		"version": "original-wordmark",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "embeddedc",
+		"name": "Embeddedc",
+		"version": "plain",
+		"tags": [
+			"language",
+			"programming"
+		]
+	},
+	{
+		"id": "erlang",
+		"name": "Erlang",
+		"version": "plain",
+		"tags": []
+	},
+	{
+		"id": "eslint",
+		"name": "Eslint",
+		"version": "original",
+		"tags": [
+			"linter",
+			"javascript",
+			"code-quality",
+			"coding-style"
+		]
+	},
+	{
+		"id": "express",
+		"name": "Express",
+		"version": "original",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "facebook",
+		"name": "Facebook",
+		"version": "plain",
+		"tags": [
+			"auth"
+		]
+	},
+	{
+		"id": "feathersjs",
+		"name": "Feathersjs",
+		"version": "original",
+		"tags": [
+			"framework",
+			"rest"
+		]
+	},
+	{
+		"id": "figma",
+		"name": "Figma",
+		"version": "plain",
+		"tags": [
+			"design"
+		]
+	},
+	{
+		"id": "filezilla",
+		"name": "Filezilla",
+		"version": "plain",
+		"tags": [
+			"ftp"
+		]
+	},
+	{
+		"id": "firebase",
+		"name": "Firebase",
+		"version": "plain",
+		"tags": [
+			"auth",
+			"hosting",
+			"storage",
+			"cloud"
+		]
+	},
+	{
+		"id": "firefox",
+		"name": "Firefox",
+		"version": "plain",
+		"tags": [
+			"browser"
+		]
+	},
+	{
+		"id": "flask",
+		"name": "Flask",
+		"version": "original",
+		"tags": [
+			"python",
+			"framework"
+		]
+	},
+	{
+		"id": "flutter",
+		"name": "Flutter",
+		"version": "plain",
+		"tags": [
+			"framework",
+			"sdk"
+		]
+	},
+	{
+		"id": "foundation",
+		"name": "Foundation",
+		"version": "plain",
+		"tags": [
+			"framework",
+			"css"
+		]
+	},
+	{
+		"id": "fsharp",
+		"name": "Fsharp",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "gatling",
+		"name": "Gatling",
+		"version": "plain",
+		"tags": [
+			"framework",
+			"testing"
+		]
+	},
+	{
+		"id": "gatsby",
+		"name": "Gatsby",
+		"version": "plain",
+		"tags": [
+			"reactjs",
+			"framework"
+		]
+	},
+	{
+		"id": "rect",
+		"name": "Rect",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "gcc",
+		"name": "Gcc",
+		"version": "plain",
+		"tags": [
+			"compiler",
+			"linux"
+		]
+	},
+	{
+		"id": "gentoo",
+		"name": "Gentoo",
+		"version": "plain-wordmark",
+		"tags": [
+			"linux",
+			"distribuition",
+			"desktop"
+		]
+	},
+	{
+		"id": "gimp",
+		"name": "Gimp",
+		"version": "plain",
+		"tags": [
+			"graphic"
+		]
+	},
+	{
+		"id": "git",
+		"name": "Git",
+		"version": "plain",
+		"tags": [
+			"version-control"
+		]
+	},
+	{
+		"id": "github",
+		"name": "Github",
+		"version": "original",
+		"tags": [
+			"version-control"
+		]
+	},
+	{
+		"id": "gitlab",
+		"name": "Gitlab",
+		"version": "plain",
+		"tags": [
+			"version-control"
+		]
+	},
+	{
+		"id": "gitter",
+		"name": "Gitter",
+		"version": "plain",
+		"tags": [
+			"social",
+			"chat"
+		]
+	},
+	{
+		"id": "go",
+		"name": "Go",
+		"version": "original-wordmark",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "google",
+		"name": "Google",
+		"version": "plain",
+		"tags": [
+			"auth"
+		]
+	},
+	{
+		"id": "googlecloud",
+		"name": "Googlecloud",
+		"version": "plain",
+		"tags": [
+			"google",
+			"cloud"
+		]
+	},
+	{
+		"id": "gradle",
+		"name": "Gradle",
+		"version": "plain",
+		"tags": [
+			"task-runner"
+		]
+	},
+	{
+		"id": "grafana",
+		"name": "Grafana",
+		"version": "original",
+		"tags": [
+			"monitoring",
+			"analytics",
+			"metrics",
+			"logs",
+			"visualization",
+			"web-application"
+		]
+	},
+	{
+		"id": "grails",
+		"name": "Grails",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "graphql",
+		"name": "Graphql",
+		"version": "plain",
+		"tags": [
+			"language",
+			"data",
+			"query"
+		]
+	},
+	{
+		"id": "groovy",
+		"name": "Groovy",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "grunt",
+		"name": "Grunt",
+		"version": "plain",
+		"tags": [
+			"task-runner",
+			"nodejs"
+		]
+	},
+	{
+		"id": "gulp",
+		"name": "Gulp",
+		"version": "plain",
+		"tags": [
+			"task-runner",
+			"nodejs"
+		]
+	},
+	{
+		"id": "godot",
+		"name": "Godot",
+		"version": "plain",
+		"tags": [
+			"game-engine",
+			"open-source"
+		]
+	},
+	{
+		"id": "haskell",
+		"name": "Haskell",
+		"version": "plain",
+		"tags": [
+			"language",
+			"functional"
+		]
+	},
+	{
+		"id": "handlebars",
+		"name": "Handlebars",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "haxe",
+		"name": "Haxe",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "heroku",
+		"name": "Heroku",
+		"version": "original",
+		"tags": [
+			"cloud"
+		]
+	},
+	{
+		"id": "html5",
+		"name": "Html5",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "hugo",
+		"name": "Hugo",
+		"version": "plain",
+		"tags": [
+			"framework",
+			"ssg",
+			"static-site-generator",
+			"go",
+			"html",
+			"css"
+		]
+	},
+	{
+		"id": "ie10",
+		"name": "Ie10",
+		"version": "original",
+		"tags": [
+			"browser"
+		]
+	},
+	{
+		"id": "ifttt",
+		"name": "Ifttt",
+		"version": "original",
+		"tags": [
+			"automation",
+			"applets",
+			"programming"
+		]
+	},
+	{
+		"id": "illustrator",
+		"name": "Illustrator",
+		"version": "plain",
+		"tags": [
+			"editor",
+			"vector"
+		]
+	},
+	{
+		"id": "inkscape",
+		"name": "Inkscape",
+		"version": "plain",
+		"tags": [
+			"editor",
+			"vector"
+		]
+	},
+	{
+		"id": "intellij",
+		"name": "Intellij",
+		"version": "plain",
+		"tags": [
+			"editor"
+		]
+	},
+	{
+		"id": "ionic",
+		"name": "Ionic",
+		"version": "original",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "jamstack",
+		"name": "Jamstack",
+		"version": "original",
+		"tags": [
+			"javascript",
+			"markup"
+		]
+	},
+	{
+		"id": "jasmine",
+		"name": "Jasmine",
+		"version": "plain",
+		"tags": [
+			"testing"
+		]
+	},
+	{
+		"id": "java",
+		"name": "Java",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "javascript",
+		"name": "Javascript",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "jeet",
+		"name": "Jeet",
+		"version": "plain",
+		"tags": [
+			"framework",
+			"css"
+		]
+	},
+	{
+		"id": "jest",
+		"name": "Jest",
+		"version": "plain",
+		"tags": [
+			"testing",
+			"javascript"
+		]
+	},
+	{
+		"id": "jenkins",
+		"name": "Jenkins",
+		"version": "line",
+		"tags": [
+			"platform",
+			"integration",
+			"server"
+		]
+	},
+	{
+		"id": "jetbrains",
+		"name": "Jetbrains",
+		"version": "plain",
+		"tags": [
+			"ide"
+		]
+	},
+	{
+		"id": "jira",
+		"name": "Jira",
+		"version": "plain",
+		"tags": [
+			"platform",
+			"organize"
+		]
+	},
+	{
+		"id": "jquery",
+		"name": "Jquery",
+		"version": "plain",
+		"tags": [
+			"library",
+			"javascript"
+		]
+	},
+	{
+		"id": "julia",
+		"name": "Julia",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "jupyter",
+		"name": "Jupyter",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "kaggle",
+		"name": "Kaggle",
+		"version": "original",
+		"tags": [
+			"platform",
+			"auth",
+			"machine-learning"
+		]
+	},
+	{
+		"id": "karma",
+		"name": "Karma",
+		"version": "plain",
+		"tags": [
+			"testing",
+			"test-runner"
+		]
+	},
+	{
+		"id": "kotlin",
+		"name": "Kotlin",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "knockout",
+		"name": "Knockout",
+		"version": "plain-wordmark",
+		"tags": [
+			"framework",
+			"javascript"
+		]
+	},
+	{
+		"id": "krakenjs",
+		"name": "Krakenjs",
+		"version": "plain",
+		"tags": [
+			"nodejs",
+			"framework"
+		]
+	},
+	{
+		"id": "kubernetes",
+		"name": "Kubernetes",
+		"version": "plain",
+		"tags": [
+			"container",
+			"deployment"
+		]
+	},
+	{
+		"id": "labview",
+		"name": "Labview",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "laravel",
+		"name": "Laravel",
+		"version": "plain",
+		"tags": [
+			"php",
+			"framework"
+		]
+	},
+	{
+		"id": "latex",
+		"name": "Latex",
+		"version": "original",
+		"tags": [
+			"latex3",
+			"latex2e",
+			"markup",
+			"tex",
+			"typesetting-system"
+		]
+	},
+	{
+		"id": "less",
+		"name": "Less",
+		"version": "plain-wordmark",
+		"tags": [
+			"css",
+			"pre-processor"
+		]
+	},
+	{
+		"id": "linkedin",
+		"name": "Linkedin",
+		"version": "plain",
+		"tags": [
+			"social",
+			"auth"
+		]
+	},
+	{
+		"id": "lua",
+		"name": "Lua",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language",
+			"object-oriented",
+			"scripting",
+			"procedural",
+			"prototype-based",
+			"functional"
+		]
+	},
+	{
+		"id": "linux",
+		"name": "Linux",
+		"version": "plain",
+		"tags": [
+			"os"
+		]
+	},
+	{
+		"id": "materialui",
+		"name": "Materialui",
+		"version": "plain",
+		"tags": [
+			"framework",
+			"design",
+			"ui"
+		]
+	},
+	{
+		"id": "matlab",
+		"name": "Matlab",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "magento",
+		"name": "Magento",
+		"version": "original",
+		"tags": [
+			"php",
+			"framework"
+		]
+	},
+	{
+		"id": "markdown",
+		"name": "Markdown",
+		"version": "original",
+		"tags": [
+			"markup",
+			"language"
+		]
+	},
+	{
+		"id": "maya",
+		"name": "Maya",
+		"version": "plain",
+		"tags": [
+			"mel",
+			"pymel",
+			"python",
+			"3d",
+			"programming",
+			"vfx",
+			"graphic",
+			"graphics",
+			"game",
+			"animation"
+		]
+	},
+	{
+		"id": "meteor",
+		"name": "Meteor",
+		"version": "plain",
+		"tags": [
+			"javascript"
+		]
+	},
+	{
+		"id": "minitab",
+		"name": "Minitab",
+		"version": "plain",
+		"tags": [
+			"package",
+			"statistics"
+		]
+	},
+	{
+		"id": "mocha",
+		"name": "Mocha",
+		"version": "plain",
+		"tags": [
+			"testing"
+		]
+	},
+	{
+		"id": "modx",
+		"name": "Modx",
+		"version": "plain",
+		"tags": [
+			"cms",
+			"php",
+			"framework"
+		]
+	},
+	{
+		"id": "mongodb",
+		"name": "Mongodb",
+		"version": "plain",
+		"tags": [
+			"database"
+		]
+	},
+	{
+		"id": "moodle",
+		"name": "Moodle",
+		"version": "plain",
+		"tags": [
+			"platform"
+		]
+	},
+	{
+		"id": "msdos",
+		"name": "Msdos",
+		"version": "line",
+		"tags": [
+			"os"
+		]
+	},
+	{
+		"id": "mysql",
+		"name": "Mysql",
+		"version": "plain",
+		"tags": [
+			"database",
+			"language"
+		]
+	},
+	{
+		"id": "neo4j",
+		"name": "Neo4j",
+		"version": "plain",
+		"tags": [
+			"database"
+		]
+	},
+	{
+		"id": "nestjs",
+		"name": "Nestjs",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "networkx",
+		"name": "Networkx",
+		"version": "original",
+		"tags": [
+			"graph",
+			"library",
+			"python"
+		]
+	},
+	{
+		"id": "nextjs",
+		"name": "Nextjs",
+		"version": "original",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "nginx",
+		"name": "Nginx",
+		"version": "original",
+		"tags": [
+			"server"
+		]
+	},
+	{
+		"id": "nixos",
+		"name": "Nixos",
+		"version": "plain",
+		"tags": [
+			"os"
+		]
+	},
+	{
+		"id": "nodejs",
+		"name": "Nodejs",
+		"version": "plain",
+		"tags": [
+			"javascript",
+			"language"
+		]
+	},
+	{
+		"id": "nodewebkit",
+		"name": "Nodewebkit",
+		"version": "plain",
+		"tags": []
+	},
+	{
+		"id": "npm",
+		"name": "Npm",
+		"version": "original-wordmark",
+		"tags": [
+			"package",
+			"manager"
+		]
+	},
+	{
+		"id": "nuget",
+		"name": "Nuget",
+		"version": "original",
+		"tags": [
+			"package",
+			"manager"
+		]
+	},
+	{
+		"id": "numpy",
+		"name": "Numpy",
+		"version": "original",
+		"tags": [
+			"library",
+			"python"
+		]
+	},
+	{
+		"id": "nuxtjs",
+		"name": "Nuxtjs",
+		"version": "plain",
+		"tags": [
+			"js",
+			"javascript",
+			"framework",
+			"frontend",
+			"vuejs"
+		]
+	},
+	{
+		"id": "objectivec",
+		"name": "Objectivec",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "opera",
+		"name": "Opera",
+		"version": "plain",
+		"tags": [
+			"browser"
+		]
+	},
+	{
+		"id": "ocaml",
+		"name": "Ocaml",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "openal",
+		"name": "Openal",
+		"version": "plain",
+		"tags": [
+			"library",
+			"audio",
+			"game",
+			"3d"
+		]
+	},
+	{
+		"id": "opengl",
+		"name": "Opengl",
+		"version": "plain",
+		"tags": [
+			"library",
+			"graphics",
+			"game",
+			"3d"
+		]
+	},
+	{
+		"id": "opensuse",
+		"name": "Opensuse",
+		"version": "plain",
+		"tags": [
+			"linux",
+			"distribuition",
+			"desktop"
+		]
+	},
+	{
+		"id": "oracle",
+		"name": "Oracle",
+		"version": "original",
+		"tags": [
+			"database"
+		]
+	},
+	{
+		"id": "pandas",
+		"name": "Pandas",
+		"version": "original",
+		"tags": [
+			"library",
+			"python"
+		]
+	},
+	{
+		"id": "perl",
+		"name": "Perl",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "phalcon",
+		"name": "Phalcon",
+		"version": "plain",
+		"tags": [
+			"php",
+			"framework"
+		]
+	},
+	{
+		"id": "photoshop",
+		"name": "Photoshop",
+		"version": "plain",
+		"tags": [
+			"editor",
+			"graphic"
+		]
+	},
+	{
+		"id": "php",
+		"name": "Php",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "phpstorm",
+		"name": "Phpstorm",
+		"version": "plain",
+		"tags": [
+			"editor"
+		]
+	},
+	{
+		"id": "podman",
+		"name": "Podman",
+		"version": "plain",
+		"tags": [
+			"container",
+			"pods",
+			"docker"
+		]
+	},
+	{
+		"id": "polygon",
+		"name": "Polygon",
+		"version": "plain",
+		"tags": [
+			"ethereum",
+			"erc20",
+			"blockchain"
+		]
+	},
+	{
+		"id": "postgresql",
+		"name": "Postgresql",
+		"version": "plain",
+		"tags": [
+			"database"
+		]
+	},
+	{
+		"id": "premierepro",
+		"name": "Premierepro",
+		"version": "plain",
+		"tags": [
+			"editor",
+			"video"
+		]
+	},
+	{
+		"id": "processing",
+		"name": "Processing",
+		"version": "plain",
+		"tags": [
+			"java",
+			"python",
+			"android",
+			"application",
+			"ide",
+			"framework"
+		]
+	},
+	{
+		"id": "protractor",
+		"name": "Protractor",
+		"version": "plain",
+		"tags": [
+			"framework",
+			"javascript"
+		]
+	},
+	{
+		"id": "putty",
+		"name": "Putty",
+		"version": "plain",
+		"tags": [
+			"ssh",
+			"server"
+		]
+	},
+	{
+		"id": "pycharm",
+		"name": "Pycharm",
+		"version": "plain",
+		"tags": [
+			"editor"
+		]
+	},
+	{
+		"id": "python",
+		"name": "Python",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "pytorch",
+		"name": "Pytorch",
+		"version": "original",
+		"tags": [
+			"programming",
+			"framework",
+			"machine-learning",
+			"python"
+		]
+	},
+	{
+		"id": "raspberrypi",
+		"name": "Raspberrypi",
+		"version": "line",
+		"tags": [
+			"arm",
+			"computer"
+		]
+	},
+	{
+		"id": "phoenix",
+		"name": "Phoenix",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "qt",
+		"name": "Qt",
+		"version": "original",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "r",
+		"name": "R",
+		"version": "original",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "rails",
+		"name": "Rails",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "react",
+		"name": "React",
+		"version": "original",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "redhat",
+		"name": "Redhat",
+		"version": "plain",
+		"tags": [
+			"server",
+			"linux"
+		]
+	},
+	{
+		"id": "redis",
+		"name": "Redis",
+		"version": "plain",
+		"tags": [
+			"server"
+		]
+	},
+	{
+		"id": "redux",
+		"name": "Redux",
+		"version": "original",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "rocksdb",
+		"name": "Rocksdb",
+		"version": "plain",
+		"tags": [
+			"database"
+		]
+	},
+	{
+		"id": "ruby",
+		"name": "Ruby",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "rubymine",
+		"name": "Rubymine",
+		"version": "plain",
+		"tags": [
+			"editor"
+		]
+	},
+	{
+		"id": "rust",
+		"name": "Rust",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "safari",
+		"name": "Safari",
+		"version": "plain",
+		"tags": [
+			"browser"
+		]
+	},
+	{
+		"id": "salesforce",
+		"name": "Salesforce",
+		"version": "plain",
+		"tags": [
+			"platform",
+			"ecommerce"
+		]
+	},
+	{
+		"id": "sdl",
+		"name": "Sdl",
+		"version": "plain",
+		"tags": [
+			"library",
+			"cross-platform",
+			"multimedia",
+			"game"
+		]
+	},
+	{
+		"id": "rstudio",
+		"name": "Rstudio",
+		"version": "plain",
+		"tags": [
+			"editor",
+			"package",
+			"statistics"
+		]
+	},
+	{
+		"id": "sass",
+		"name": "Sass",
+		"version": "original",
+		"tags": [
+			"pre-processor",
+			"css"
+		]
+	},
+	{
+		"id": "scala",
+		"name": "Scala",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language"
+		]
+	},
+	{
+		"id": "selenium",
+		"name": "Selenium",
+		"version": "original",
+		"tags": [
+			"webdrive",
+			"automation"
+		]
+	},
+	{
+		"id": "sequelize",
+		"name": "Sequelize",
+		"version": "plain",
+		"tags": [
+			"database",
+			"language"
+		]
+	},
+	{
+		"id": "shopware",
+		"name": "Shopware",
+		"version": "original",
+		"tags": [
+			"cloud",
+			"platform"
+		]
+	},
+	{
+		"id": "shotgrid",
+		"name": "Shotgrid",
+		"version": "plain",
+		"tags": [
+			"web-application",
+			"autodesk",
+			"project-management",
+			"pipeline",
+			"production-tool",
+			"production-tracking"
+		]
+	},
+	{
+		"id": "sketch",
+		"name": "Sketch",
+		"version": "line",
+		"tags": [
+			"application"
+		]
+	},
+	{
+		"id": "slack",
+		"name": "Slack",
+		"version": "plain",
+		"tags": [
+			"chat"
+		]
+	},
+	{
+		"id": "socketio",
+		"name": "Socketio",
+		"version": "original",
+		"tags": [
+			"library",
+			"networking",
+			"websockets"
+		]
+	},
+	{
+		"id": "solidity",
+		"name": "Solidity",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"language",
+			"blockchain"
+		]
+	},
+	{
+		"id": "sourcetree",
+		"name": "Sourcetree",
+		"version": "original",
+		"tags": [
+			"version-control"
+		]
+	},
+	{
+		"id": "spring",
+		"name": "Spring",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "spss",
+		"name": "Spss",
+		"version": "plain",
+		"tags": [
+			"package",
+			"statistics"
+		]
+	},
+	{
+		"id": "sqlalchemy",
+		"name": "Sqlalchemy",
+		"version": "plain",
+		"tags": [
+			"python",
+			"orm"
+		]
+	},
+	{
+		"id": "sqlite",
+		"name": "Sqlite",
+		"version": "plain",
+		"tags": [
+			"sql",
+			"database",
+			"db"
+		]
+	},
+	{
+		"id": "subversion",
+		"name": "Subversion",
+		"version": "original",
+		"tags": [
+			"svn",
+			"version"
+		]
+	},
+	{
+		"id": "microsoftsqlserver",
+		"name": "Microsoftsqlserver",
+		"version": "plain",
+		"tags": [
+			"database"
+		]
+	},
+	{
+		"id": "ssh",
+		"name": "Ssh",
+		"version": "original",
+		"tags": [
+			"security"
+		]
+	},
+	{
+		"id": "stylus",
+		"name": "Stylus",
+		"version": "original",
+		"tags": [
+			"css",
+			"pre-processor"
+		]
+	},
+	{
+		"id": "svelte",
+		"name": "Svelte",
+		"version": "plain",
+		"tags": [
+			"javascript",
+			"framework"
+		]
+	},
+	{
+		"id": "swift",
+		"name": "Swift",
+		"version": "plain",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "symfony",
+		"name": "Symfony",
+		"version": "original",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "storybook",
+		"name": "Storybook",
+		"version": "plain",
+		"tags": [
+			"framework",
+			"documentation",
+			"ui"
+		]
+	},
+	{
+		"id": "tailwindcss",
+		"name": "Tailwindcss",
+		"version": "original-wordmark",
+		"tags": [
+			"css",
+			"framework"
+		]
+	},
+	{
+		"id": "tensorflow",
+		"name": "Tensorflow",
+		"version": "original",
+		"tags": [
+			"library",
+			"machine-learning",
+			"deep-learning"
+		]
+	},
+	{
+		"id": "terraform",
+		"name": "Terraform",
+		"version": "plain",
+		"tags": [
+			"deployment",
+			"architecture",
+			"automation"
+		]
+	},
+	{
+		"id": "threejs",
+		"name": "Threejs",
+		"version": "original",
+		"tags": [
+			"javascript",
+			"framework"
+		]
+	},
+	{
+		"id": "tomcat",
+		"name": "Tomcat",
+		"version": "line",
+		"tags": [
+			"server"
+		]
+	},
+	{
+		"id": "tortoisegit",
+		"name": "Tortoisegit",
+		"version": "plain",
+		"tags": [
+			"git"
+		]
+	},
+	{
+		"id": "towergit",
+		"name": "Towergit",
+		"version": "plain",
+		"tags": [
+			"git"
+		]
+	},
+	{
+		"id": "travis",
+		"name": "Travis",
+		"version": "plain",
+		"tags": [
+			"platform",
+			"integration"
+		]
+	},
+	{
+		"id": "thealgorithms",
+		"name": "Thealgorithms",
+		"version": "plain",
+		"tags": [
+			"organization",
+			"algorithms"
+		]
+	},
+	{
+		"id": "trello",
+		"name": "Trello",
+		"version": "plain",
+		"tags": [
+			"platform",
+			"organize"
+		]
+	},
+	{
+		"id": "twitter",
+		"name": "Twitter",
+		"version": "original",
+		"tags": [
+			"auth"
+		]
+	},
+	{
+		"id": "typescript",
+		"name": "Typescript",
+		"version": "plain",
+		"tags": [
+			"programming",
+			"transpiler"
+		]
+	},
+	{
+		"id": "typo3",
+		"name": "Typo3",
+		"version": "plain",
+		"tags": [
+			"cms",
+			"php"
+		]
+	},
+	{
+		"id": "ubuntu",
+		"name": "Ubuntu",
+		"version": "plain",
+		"tags": [
+			"os"
+		]
+	},
+	{
+		"id": "unity",
+		"name": "Unity",
+		"version": "original",
+		"tags": [
+			"csharp",
+			"engine",
+			"game"
+		]
+	},
+	{
+		"id": "unix",
+		"name": "Unix",
+		"version": "original",
+		"tags": [
+			"os"
+		]
+	},
+	{
+		"id": "unrealengine",
+		"name": "Unrealengine",
+		"version": "original",
+		"tags": [
+			"c++",
+			"engine",
+			"game"
+		]
+	},
+	{
+		"id": "uwsgi",
+		"name": "Uwsgi",
+		"version": "plain",
+		"tags": [
+			"hosting"
+		]
+	},
+	{
+		"id": "vagrant",
+		"name": "Vagrant",
+		"version": "plain",
+		"tags": [
+			"platform"
+		]
+	},
+	{
+		"id": "vim",
+		"name": "Vim",
+		"version": "plain",
+		"tags": [
+			"editor"
+		]
+	},
+	{
+		"id": "visualstudio",
+		"name": "Visualstudio",
+		"version": "plain",
+		"tags": [
+			"editor"
+		]
+	},
+	{
+		"id": "vuejs",
+		"name": "Vuejs",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "vuestorefront",
+		"name": "Vuestorefront",
+		"version": "plain",
+		"tags": [
+			"framework"
+		]
+	},
+	{
+		"id": "vscode",
+		"name": "Vscode",
+		"version": "plain",
+		"tags": [
+			"editor",
+			"ide"
+		]
+	},
+	{
+		"id": "webflow",
+		"name": "Webflow",
+		"version": "original",
+		"tags": [
+			"cms",
+			"ecommerce"
+		]
+	},
+	{
+		"id": "weblate",
+		"name": "Weblate",
+		"version": "plain",
+		"tags": [
+			"localization"
+		]
+	},
+	{
+		"id": "webpack",
+		"name": "Webpack",
+		"version": "plain",
+		"tags": [
+			"package",
+			"manager"
+		]
+	},
+	{
+		"id": "webstorm",
+		"name": "Webstorm",
+		"version": "plain",
+		"tags": [
+			"editor"
+		]
+	},
+	{
+		"id": "windows8",
+		"name": "Windows8",
+		"version": "original",
+		"tags": [
+			"os"
+		]
+	},
+	{
+		"id": "woocommerce",
+		"name": "Woocommerce",
+		"version": "plain",
+		"tags": [
+			"ecommerce"
+		]
+	},
+	{
+		"id": "wordpress",
+		"name": "Wordpress",
+		"version": "plain",
+		"tags": [
+			"cms"
+		]
+	},
+	{
+		"id": "xamarin",
+		"name": "Xamarin",
+		"version": "original",
+		"tags": [
+			"application",
+			"programming",
+			"editor",
+			"ide",
+			"ios",
+			"mobile",
+			"apple",
+			"android",
+			"windows"
+		]
+	},
+	{
+		"id": "xcode",
+		"name": "Xcode",
+		"version": "plain",
+		"tags": [
+			"application",
+			"editor",
+			"ide",
+			"ios",
+			"iphone",
+			"mobile",
+			"apple"
+		]
+	},
+	{
+		"id": "xd",
+		"name": "Xd",
+		"version": "plain",
+		"tags": [
+			"design",
+			"editor",
+			"ui"
+		]
+	},
+	{
+		"id": "yarn",
+		"name": "Yarn",
+		"version": "plain",
+		"tags": [
+			"package",
+			"manager"
+		]
+	},
+	{
+		"id": "yii",
+		"name": "Yii",
+		"version": "plain",
+		"tags": [
+			"php",
+			"framework"
+		]
+	},
+	{
+		"id": "yunohost",
+		"name": "Yunohost",
+		"version": "plain",
+		"tags": [
+			"os"
+		]
+	},
+	{
+		"id": "zend",
+		"name": "Zend",
+		"version": "plain",
+		"tags": [
+			"php",
+			"framework"
+		]
+	},
+	{
+		"id": "zig",
+		"name": "Zig",
+		"version": "original",
+		"tags": [
+			"language"
+		]
+	},
+	{
+		"id": "pytest",
+		"name": "Pytest",
+		"version": "plain",
+		"tags": [
+			"python",
+			"framework",
+			"testing"
+		]
+	},
+	{
+		"id": "opencv",
+		"name": "Opencv",
+		"version": "plain",
+		"tags": [
+			"library",
+			"c/c++",
+			"computer-vision"
+		]
+	},
+	{
+		"id": "fastapi",
+		"name": "Fastapi",
+		"version": "plain",
+		"tags": [
+			"python",
+			"framework"
+		]
+	},
+	{
+		"id": "k3s",
+		"name": "K3s",
+		"version": "original",
+		"tags": [
+			"kubernetes",
+			"container",
+			"platform"
+		]
+	},
+	{
+		"id": "packer",
+		"name": "Packer",
+		"version": "original",
+		"tags": [
+			"infrastructure",
+			"infrastructure-as-code",
+			"continuous-delivery"
+		]
+	},
+	{
+		"id": "anaconda",
+		"name": "Anaconda",
+		"version": "original",
+		"tags": [
+			"python",
+			"data-science"
+		]
+	},
+	{
+		"id": "rspec",
+		"name": "Rspec",
+		"version": "original",
+		"tags": [
+			"ruby",
+			"framework",
+			"testing"
+		]
+	},
+	{
+		"id": "argocd",
+		"name": "Argocd",
+		"version": "plain",
+		"tags": [
+			"gitops",
+			"continuous-delivery"
+		]
+	},
+	{
+		"id": "prometheus",
+		"name": "Prometheus",
+		"version": "original",
+		"tags": [
+			"monitoring",
+			"observability",
+			"analysis"
+		]
+	},
+	{
+		"id": "blender",
+		"name": "Blender",
+		"version": "original",
+		"tags": [
+			"modelling",
+			"python",
+			"3d",
+			"animation"
+		]
+	},
+	{
+		"id": "dropwizard",
+		"name": "Dropwizard",
+		"version": "plain",
+		"tags": [
+			"java",
+			"framework"
+		]
+	},
+	{
+		"id": "vuetify",
+		"name": "Vuetify",
+		"version": "line",
+		"tags": [
+			"css",
+			"framework",
+			"vuejs-library",
+			"material-design"
+		]
+	},
+	{
+		"id": "fedora",
+		"name": "Fedora",
+		"version": "plain",
+		"tags": [
+			"linux",
+			"distribuition",
+			"desktop"
+		]
+	}
+]
