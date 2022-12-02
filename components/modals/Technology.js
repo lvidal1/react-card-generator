@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setTechnologies } from "@store/slices/user";
 import { toggleTechnology } from "@store/slices/modal";
-import { setTechnologyList } from "@store/slices/technology";
 
 import Modal from "@components/shared/Modal";
 import Checkbox from "@components/shared/Checkbox";
 import Button from "@components/shared/Button";
-import { technologies } from "data";
 
 import styles from "@styles/modals/Technology.module.css";
 import classNames from "classnames";
@@ -17,10 +15,6 @@ const Technology = () => {
 
 	const [modalTechnology, setModalTechnology] = useState([]);
 	const technologyList = useSelector(({ technology }) => technology.list);
-
-	useEffect(() => {
-		dispatch(setTechnologyList(technologies));
-	}, [dispatch]);
 
 	const submit = () => {
 		if (modalTechnology.length) {
@@ -63,7 +57,7 @@ const Technology = () => {
 							>
 								<i
 									className={classNames(
-										`devicon-${id.toLowerCase()}-${version}`,
+										`devicon-${id}-${version} colored`,
 										styles.logo
 									)}
 								></i>

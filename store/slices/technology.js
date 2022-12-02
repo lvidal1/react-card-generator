@@ -4,10 +4,12 @@ export const technologySlice = createSlice({
 	name: "technology",
 	initialState: {
 		list: [],
+		byId: {},
 	},
 	reducers: {
 		setTechnologyList: (state, action) => {
 			state.list = action.payload;
+			state.byId = Object.assign({}, ...action.payload.map((item) => ({ [item.id]: item })))
 		},
 	},
 });
