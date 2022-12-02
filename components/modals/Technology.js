@@ -9,6 +9,9 @@ import Checkbox from "@components/shared/Checkbox";
 import Button from "@components/shared/Button";
 import { technologies } from "data";
 
+import styles from "@styles/modals/Technology.module.css";
+import classNames from "classnames";
+
 const Technology = () => {
 	const dispatch = useDispatch();
 
@@ -46,15 +49,26 @@ const Technology = () => {
 		<Modal>
 			<Modal.Header onClose={close}>Set your technology</Modal.Header>
 			<Modal.Body>
-				<div className="flex justify-evenly mt-5">
-					{technologyList.map(({ id, name }) => (
-						<Checkbox
-							key={`Technology.${id}`}
-							id={`Technology.${id}`}
-							name="technology"
-							onChange={handleTechnologyChange}
-							value={id}
-						/>
+				<div className="flex justify-evenly mt-5 flex-wrap overflow-y-scroll h-64">
+					{technologyList.map(({ id, name, version }) => (
+						<span key={`Technology.Option.${id}`}>
+							<Checkbox
+								key={`Technology.${id}`}
+								id={`Technology.${id}`}
+								name="technology"
+								onChange={handleTechnologyChange}
+								value={id}
+								title={name}
+								className={styles.logoOption}
+							>
+								<i
+									className={classNames(
+										`devicon-${id.toLowerCase()}-${version}`,
+										styles.logo
+									)}
+								></i>
+							</Checkbox>
+						</span>
 					))}
 				</div>
 			</Modal.Body>
