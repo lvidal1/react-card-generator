@@ -7,7 +7,12 @@ export const userSlice = createSlice({
 		birth: "1991-01-01",
 		position: "FrontEnd",
 		country: "PE",
-		technologies: ["python", "js", "css", "react"],
+		technologies: ['react',
+			'electron',
+			'javascript',
+			'css3',
+			'html5',
+			'nextjs'],
 		photo: null,
 	},
 	reducers: {
