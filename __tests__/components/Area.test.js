@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 
 describe('Area', () => {
     const initialState = {
-        user: { fullname: '', birth: '' }
+        user: { fullname: '', birth: '' }, technology: { byId: {}, list: [] }
     }
     const mockStore = configureStore();
     let store;
