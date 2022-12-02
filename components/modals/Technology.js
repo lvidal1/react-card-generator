@@ -59,10 +59,10 @@ const Technology = () => {
 		if (remaining < 0) {
 			return `You just can select ${MAX_ALLOWED} options`;
 		}
-		if (remaining == 0) {
+		if (remaining === 0) {
 			return "Yei! Your stack is complete";
 		}
-		if (remaining == 1) {
+		if (remaining === 1) {
 			return "You have 1 more option";
 		} else {
 			return `You have ${remaining} more options`;
