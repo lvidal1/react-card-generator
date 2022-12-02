@@ -12,6 +12,7 @@ const Checkbox = ({
 	title,
 	children,
 	className,
+	checked,
 }) => {
 	return (
 		<label htmlFor={id} className={classNames(styles.container, className)}>
@@ -22,6 +23,7 @@ const Checkbox = ({
 				onChange={onChange}
 				value={value}
 				title={title}
+				checked={checked}
 			/>
 			<div className={styles.control}>{children}</div>
 			<div className="text-sm w-14 text-center">{label}</div>

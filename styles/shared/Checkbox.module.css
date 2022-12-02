@@ -8,7 +8,7 @@
 }
 
 .container input[type="checkbox"] + div {
-	@apply opacity-50 hover:opacity-100 focus:opacity-100 cursor-pointer;
+	@apply opacity-40 hover:opacity-100 focus:opacity-100 cursor-pointer;
 }
 
 .container input[type="checkbox"]:focus:not(:checked) + div {
