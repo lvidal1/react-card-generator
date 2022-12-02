@@ -5,7 +5,3 @@
 .logoOption div {
 	border: 0;
 }
-
-.logoOption input[type="checkbox"]:checked + div i {
-	@apply text-primary-red;
-}
