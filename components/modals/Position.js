@@ -7,7 +7,8 @@ import { setPositionList } from "@store/slices/position";
 import Modal from "@components/shared/Modal";
 import Radio from "@components/shared/Radio";
 import Button from "@components/shared/Button";
-import { positions } from "../../data";
+import { positions } from "data";
+import Image from "next/image";
 
 const Position = () => {
 	const dispatch = useDispatch();
@@ -47,7 +48,17 @@ const Position = () => {
 							name="position"
 							onChange={handlePositionChange}
 							value={id}
-						/>
+						>
+							<div className="w-12 h-14 relative">
+								<Image
+									src="/soccer-icon.png"
+									alt="Soccer field"
+									layout="fill"
+									objectFit="cover"
+									quality={100}
+								/>
+							</div>
+						</Radio>
 					))}
 				</div>
 			</Modal.Body>

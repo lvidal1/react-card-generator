@@ -5,7 +5,7 @@ export const userSlice = createSlice({
 	initialState: {
 		fullname: "John Doe",
 		birth: "1991-01-01",
-		position: "FrontEnd",
+		position: "FE",
 		country: "PE",
 		technologies: ['react',
 			'electron',

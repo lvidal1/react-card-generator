@@ -7,9 +7,10 @@ import Fullname from "./area/Fullname";
 import Birthday from "./area/Birthday";
 import Country from "./area/Country";
 import Technologies from "./area/Technologies";
+import Position from "./area/Position";
 
 const Area = () => {
-	const { fullname, birth, country, technologies } = useSelector(
+	const { fullname, birth, country, technologies, position } = useSelector(
 		(state) => state.user
 	);
 
@@ -24,6 +25,7 @@ const Area = () => {
 				<Birthday text={birth} classname="mt-1.5" />
 				<Country iso={country} classname="mt-1.5" />
 				<Technologies technologies={technologies} classname="mt-1.5" />
+				<Position position={position} />
 			</div>
 		</div>
 	);
