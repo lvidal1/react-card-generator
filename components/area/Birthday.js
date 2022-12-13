@@ -1,8 +1,9 @@
 import styles from "@styles/area/Birthday.module.css";
+import classNames from "classnames";
 
-const Birthday = ({ text, classname }) => {
+const Birthday = ({ text, classname, onClick }) => {
 	return (
-		<div className={`${styles.container} ${classname}`}>
+		<div className={classNames([styles.container, classname, "cursor-pointer"])} onClick={onClick}>
 			<div className={`${styles.ribbonDecorator}`}>
 				<div className={styles.blocks}>
 					<div></div>

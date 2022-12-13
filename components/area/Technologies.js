@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 import styles from "@styles/area/Technologies.module.css";
 
-const Technologies = ({ technologies }) => {
+const Technologies = ({ technologies, onClick }) => {
 	const { byId, list } = useSelector((state) => state.technology);
 
 	const getVersion = (id) => (byId[id] ? byId[id].version : null);
@@ -23,7 +23,7 @@ const Technologies = ({ technologies }) => {
 	};
 
 	return (
-		<div className={styles.container}>
+		<div className={classNames([styles.container, "cursor-pointer"])} onClick={onClick}>
 			{list.length > 0 &&
 				technologies.map((id) => {
 					const logoVersion = getVersion(id);
