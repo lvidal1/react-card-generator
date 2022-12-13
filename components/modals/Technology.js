@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setTechnologies } from "@store/slices/user";
 import { toggleTechnology } from "@store/slices/modal";
@@ -16,9 +16,21 @@ const Technology = () => {
 
 	const MAX_ALLOWED = 6;
 
+	const { technologies: xTechnologies } = useSelector(
+		(state) => state.user
+	);
+
+	const { byId, list } = useSelector((state) => state.technology);
+
 	const [modalTechnology, setModalTechnology] = useState([]);
 	const [searchTech, setSearchTech] = useState("");
 	const technologyList = useSelector(({ technology }) => technology.list);
+
+	useEffect(() => {
+		if (xTechnologies.length) {
+			setModalTechnology(xTechnologies)
+		}
+	}, []);
 
 	const submit = () => {
 		if (modalTechnology.length && !selectionIsFull()) {
@@ -69,6 +81,8 @@ const Technology = () => {
 		}
 	};
 
+	const getVersion = (id) => (byId[id] ? byId[id].version : null);
+
 	return (
 		<Modal>
 			<Modal.Header onClose={close}>Set your technology</Modal.Header>
@@ -98,6 +112,23 @@ const Technology = () => {
 						<span className="block">Clear x</span>
 					</div>
 				</div>
+				<div className="flex justify-evenly my-5 flex-wrap">
+					{modalTechnology.map((techId) => {
+
+						const version = getVersion(techId);
+
+						return <span>
+							<i
+								className={classNames(
+									`devicon-${techId}-${version} colored`,
+									styles.logo
+								)}
+								title={techId}
+							></i>
+						</span>
+					})}
+				</div>
+				<hr />
 				<div className="flex justify-evenly mt-5 flex-wrap overflow-y-scroll h-64">
 					{technologyList
 						.filter(({ id }) =>

@@ -12,6 +12,7 @@ const Radio = ({
 	title,
 	children,
 	className,
+	checked
 }) => {
 	return (
 		<label
@@ -25,6 +26,7 @@ const Radio = ({
 				onChange={onChange}
 				type="radio"
 				value={value}
+				checked={checked}
 			/>
 			<div className={styles.control}>{children}</div>
 			<div className="text-sm w-14 text-center">{label}</div>
