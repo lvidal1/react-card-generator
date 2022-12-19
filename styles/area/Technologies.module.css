@@ -1,7 +1,13 @@
 .container {
-	@apply bg-white p-1 flex flex-wrap grid grid-cols-3 gap-2;
+	@apply block-shadow bg-white p-1 flex flex-wrap grid grid-cols-3 gap-2;
 }
 
 .logo {
 	font-size: 1.5rem;
+}
+
+.block-shadow {
+	box-shadow: 0.5px 6px 1px 0px rgb(0 0 0 / 60%);
+	-webkit-box-shadow: 0.5px 6px 1px 0px rgb(0 0 0 / 60%);
+	-moz-box-shadow: 0.5px 6px 1px 0px rgb(0 0 0 / 60%);
 }
