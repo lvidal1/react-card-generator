@@ -16,6 +16,10 @@ const Chooser = () => {
 		dispatch(togglePhotoChooser(false));
 	};
 
+	const submit = () => {
+		dispatch(togglePhotoChooser(false));
+	};
+
 	return (
 		<Modal>
 			<Modal.Header onClose={close}>Choose</Modal.Header>
@@ -39,6 +43,9 @@ const Chooser = () => {
 					/>
 				)}
 			</Modal.Body>
+			<Modal.Footer>
+				<Button text="Looks good!" onClick={submit} />
+			</Modal.Footer>
 		</Modal>
 	);
 };
