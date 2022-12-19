@@ -30,12 +30,16 @@ const Area = () => {
 				className={classNames(
 					styles.layer,
 					styles["bg-layer-purple"],
-					styles["bg-layer-color-3"]
+					styles["bg-layer-color-3"],
+					"relative"
 				)}
 				id="layer"
 				data-testid="Area.layer"
 			>
-				<div className="flex items-stretch flex-col h-full">
+				<div className=" h-full w-full absolute top-0 left-0 z-0">
+					<div className="relative mt-24 h-52 w-40 mx-auto border-2 border-white z-0"></div>
+				</div>
+				<div className="flex items-stretch flex-col h-full z-10 relative">
 					<div className="flex-1 w-full flex justify-between">
 						<div className="">
 							<Technologies
