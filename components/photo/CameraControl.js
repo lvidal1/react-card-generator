@@ -26,7 +26,7 @@ const CameraControl = ({ children }) => {
 					<div className={styles.cameraControl}>
 						<Camera
 							onTakePhoto={handleTakePhoto}
-							idealFacingMode={FACING_MODES.ENVIRONMENT}
+							idealFacingMode={FACING_MODES.USER}
 							onTakePhotoAnimationDone={
 								handleTakePhotoAnimationDone
 							}

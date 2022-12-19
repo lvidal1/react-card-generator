@@ -15,6 +15,7 @@ import {
 	togglePosition,
 	toggleCountry,
 	toggleTechnology,
+	togglePhotoChooser,
 } from "@store/slices/modal";
 import classNames from "classnames";
 
@@ -39,7 +40,10 @@ const Area = () => {
 				id="layer"
 				data-testid="Area.layer"
 			>
-				<Photo source={raw} />
+				<Photo
+					source={raw}
+					onClick={() => dispatch(togglePhotoChooser(true))}
+				/>
 				<div className="flex items-stretch flex-col h-full z-10 relative">
 					<div className="flex-1 w-full flex justify-between">
 						<div className="">
