@@ -15,6 +15,7 @@ import {
 	toggleCountry,
 	toggleTechnology,
 } from "@store/slices/modal";
+import classNames from "classnames";
 
 const Area = () => {
 	const { fullname, birth, country, technologies, position } = useSelector(
@@ -26,7 +27,11 @@ const Area = () => {
 	return (
 		<div className={styles.container}>
 			<div
-				className={`${styles.layer} ${styles["bg-layer-purple"]}`}
+				className={classNames(
+					styles.layer,
+					styles["bg-layer-purple"],
+					styles["bg-layer-color-3"]
+				)}
 				id="layer"
 				data-testid="Area.layer"
 			>
