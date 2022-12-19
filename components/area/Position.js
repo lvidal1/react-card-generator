@@ -1,14 +1,17 @@
 import Image from "next/image";
 
-const Position = ({ position }) => {
+const Position = ({ position, onClick }) => {
 	return (
-		<div className="bg-white w-12 h-14 relative">
+		<div
+			className="bg-white w-12 h-14 relative cursor-pointer"
+			onClick={onClick}
+		>
 			<div className="w-full h-full">
 				<Image
 					src="/soccer-icon.png"
 					alt="Soccer field"
-					layout="fill"
-					objectFit="cover"
+					fill
+					style={{ objectFit: "cover" }}
 					quality={100}
 				/>
 			</div>

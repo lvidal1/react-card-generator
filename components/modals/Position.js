@@ -13,12 +13,20 @@ import Image from "next/image";
 const Position = () => {
 	const dispatch = useDispatch();
 
+	const { position: xPosition } = useSelector((state) => state.user);
+
 	const [modalPosition, setModalPosition] = useState("");
 	const positionList = useSelector(({ position }) => position.list);
 
 	useEffect(() => {
 		dispatch(setPositionList(positions));
 	}, [dispatch]);
+
+	useEffect(() => {
+		if (xPosition.length) {
+			setModalPosition(xPosition);
+		}
+	}, [xPosition]);
 
 	const submit = () => {
 		if (modalPosition.length) {
@@ -48,13 +56,14 @@ const Position = () => {
 							name="position"
 							onChange={handlePositionChange}
 							value={id}
+							checked={modalPosition === id}
 						>
 							<div className="w-12 h-14 relative">
 								<Image
 									src="/soccer-icon.png"
 									alt="Soccer field"
-									layout="fill"
-									objectFit="cover"
+									fill
+									style={{ objectFit: "cover" }}
 									quality={100}
 								/>
 							</div>

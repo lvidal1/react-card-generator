@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { setPersonalInformation } from "@store/slices/user";
 import { togglePersonalInfo } from "@store/slices/modal";
 
@@ -12,6 +12,10 @@ const Information = () => {
 
 	const [fullname, setFullname] = useState("");
 	const [birth, setBirth] = useState("");
+
+	const { fullname: xFullname, birth: xBirth } = useSelector(
+		(state) => state.user
+	);
 
 	const submit = () => {
 		if (fullname.length && birth.length) {
@@ -31,6 +35,15 @@ const Information = () => {
 	function handleBirthChange(e) {
 		setBirth(e.target.value);
 	}
+
+	useEffect(() => {
+		if (xFullname.length) {
+			setFullname(xFullname);
+		}
+		if (xBirth.length) {
+			setBirth(xBirth);
+		}
+	}, [xFullname, xBirth]);
 
 	return (
 		<Modal>

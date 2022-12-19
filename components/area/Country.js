@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import styles from "@styles/area/Country.module.css";
 import classNames from "classnames";
 
-const Country = ({ iso }) => {
+const Country = ({ iso, onClick }) => {
 	const [flag, setFlag] = useState("");
 	const [name, setName] = useState("");
 
@@ -16,7 +16,11 @@ const Country = ({ iso }) => {
 
 	return (
 		iso && (
-			<span className={styles.container} data-testid="Country.Flag">
+			<span
+				className={classNames([styles.container, "cursor-pointer"])}
+				data-testid="Country.Flag"
+				onClick={onClick}
+			>
 				<span className={styles.name}>{name}</span>
 				<span
 					className={classNames("fi", `fi-${flag}`, styles.flag)}
