@@ -23,7 +23,10 @@ const Technologies = ({ technologies, onClick }) => {
 	};
 
 	return (
-		<div className={classNames([styles.container, "cursor-pointer"])} onClick={onClick}>
+		<div
+			className={classNames([styles.container, "cursor-pointer"])}
+			onClick={onClick}
+		>
 			{list.length > 0 &&
 				technologies.map((id) => {
 					const logoVersion = getVersion(id);

@@ -38,10 +38,10 @@ const Information = () => {
 
 	useEffect(() => {
 		if (xFullname.length) {
-			setFullname(xFullname)
+			setFullname(xFullname);
 		}
 		if (xBirth.length) {
-			setBirth(xBirth)
+			setBirth(xBirth);
 		}
 	}, []);
 

@@ -16,9 +16,7 @@ const Technology = () => {
 
 	const MAX_ALLOWED = 6;
 
-	const { technologies: xTechnologies } = useSelector(
-		(state) => state.user
-	);
+	const { technologies: xTechnologies } = useSelector((state) => state.user);
 
 	const { byId, list } = useSelector((state) => state.technology);
 
@@ -28,7 +26,7 @@ const Technology = () => {
 
 	useEffect(() => {
 		if (xTechnologies.length) {
-			setModalTechnology(xTechnologies)
+			setModalTechnology(xTechnologies);
 		}
 	}, []);
 
@@ -114,18 +112,19 @@ const Technology = () => {
 				</div>
 				<div className="flex justify-evenly my-5 flex-wrap">
 					{modalTechnology.map((techId) => {
-
 						const version = getVersion(techId);
 
-						return <span>
-							<i
-								className={classNames(
-									`devicon-${techId}-${version} colored`,
-									styles.logo
-								)}
-								title={techId}
-							></i>
-						</span>
+						return (
+							<span>
+								<i
+									className={classNames(
+										`devicon-${techId}-${version} colored`,
+										styles.logo
+									)}
+									title={techId}
+								></i>
+							</span>
+						);
 					})}
 				</div>
 				<hr />

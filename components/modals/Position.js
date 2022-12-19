@@ -13,9 +13,7 @@ import Image from "next/image";
 const Position = () => {
 	const dispatch = useDispatch();
 
-	const { position: xPosition } = useSelector(
-		(state) => state.user
-	);
+	const { position: xPosition } = useSelector((state) => state.user);
 
 	const [modalPosition, setModalPosition] = useState("");
 	const positionList = useSelector(({ position }) => position.list);
@@ -26,7 +24,7 @@ const Position = () => {
 
 	useEffect(() => {
 		if (xPosition.length) {
-			setModalPosition(xPosition)
+			setModalPosition(xPosition);
 		}
 	}, []);
 
@@ -64,8 +62,8 @@ const Position = () => {
 								<Image
 									src="/soccer-icon.png"
 									alt="Soccer field"
-									layout="fill"
-									objectFit="cover"
+									fill
+									style={{ objectFit: "cover" }}
 									quality={100}
 								/>
 							</div>

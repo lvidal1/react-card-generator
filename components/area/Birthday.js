@@ -3,7 +3,14 @@ import classNames from "classnames";
 
 const Birthday = ({ text, classname, onClick }) => {
 	return (
-		<div className={classNames([styles.container, classname, "cursor-pointer"])} onClick={onClick}>
+		<div
+			className={classNames([
+				styles.container,
+				classname,
+				"cursor-pointer",
+			])}
+			onClick={onClick}
+		>
 			<div className={`${styles.ribbonDecorator}`}>
 				<div className={styles.blocks}>
 					<div></div>

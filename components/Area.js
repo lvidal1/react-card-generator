@@ -30,11 +30,29 @@ const Area = () => {
 				id="layer"
 				data-testid="Area.layer"
 			>
-				<Fullname text={fullname} onClick={() => dispatch(togglePersonalInfo(true))} />
-				<Birthday text={birth} classname="mt-1.5" onClick={() => dispatch(togglePersonalInfo(true))} />
-				<Country iso={country} classname="mt-1.5" onClick={() => dispatch(toggleCountry(true))} />
-				<Technologies technologies={technologies} classname="mt-1.5" onClick={() => dispatch(toggleTechnology(true))} />
-				<Position position={position} onClick={() => dispatch(togglePosition(true))} />
+				<Fullname
+					text={fullname}
+					onClick={() => dispatch(togglePersonalInfo(true))}
+				/>
+				<Birthday
+					text={birth}
+					classname="mt-1.5"
+					onClick={() => dispatch(togglePersonalInfo(true))}
+				/>
+				<Country
+					iso={country}
+					classname="mt-1.5"
+					onClick={() => dispatch(toggleCountry(true))}
+				/>
+				<Technologies
+					technologies={technologies}
+					classname="mt-1.5"
+					onClick={() => dispatch(toggleTechnology(true))}
+				/>
+				<Position
+					position={position}
+					onClick={() => dispatch(togglePosition(true))}
+				/>
 			</div>
 		</div>
 	);

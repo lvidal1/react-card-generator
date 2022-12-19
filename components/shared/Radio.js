@@ -12,7 +12,7 @@ const Radio = ({
 	title,
 	children,
 	className,
-	checked
+	checked,
 }) => {
 	return (
 		<label

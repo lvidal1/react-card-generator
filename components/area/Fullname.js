@@ -3,7 +3,10 @@ import classNames from "classnames";
 
 const Fullname = ({ text, onClick }) => {
 	return (
-		<div className={classNames([styles.container, "cursor-pointer"])} onClick={onClick}>
+		<div
+			className={classNames([styles.container, "cursor-pointer"])}
+			onClick={onClick}
+		>
 			<div className={`${styles.ribbonDecorator}`}>
 				<div className={styles.blocks}>
 					<div></div>
