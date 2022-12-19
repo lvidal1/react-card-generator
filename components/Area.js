@@ -30,29 +30,47 @@ const Area = () => {
 				id="layer"
 				data-testid="Area.layer"
 			>
-				<Fullname
-					text={fullname}
-					onClick={() => dispatch(togglePersonalInfo(true))}
-				/>
-				<Birthday
-					text={birth}
-					classname="mt-1.5"
-					onClick={() => dispatch(togglePersonalInfo(true))}
-				/>
-				<Country
-					iso={country}
-					classname="mt-1.5"
-					onClick={() => dispatch(toggleCountry(true))}
-				/>
-				<Technologies
-					technologies={technologies}
-					classname="mt-1.5"
-					onClick={() => dispatch(toggleTechnology(true))}
-				/>
-				<Position
-					position={position}
-					onClick={() => dispatch(togglePosition(true))}
-				/>
+				<div className="flex items-stretch flex-col h-full">
+					<div className="flex-1 w-full flex justify-between">
+						<div className="">
+							<Technologies
+								technologies={technologies}
+								classname="mt-1.5"
+								onClick={() => dispatch(toggleTechnology(true))}
+							/>
+						</div>
+						<div className="flex flex-col items-end space-y-2">
+							<Country
+								iso={country}
+								classname="mt-1.5"
+								onClick={() => dispatch(toggleCountry(true))}
+							/>
+
+							<Position
+								position={position}
+								onClick={() => dispatch(togglePosition(true))}
+							/>
+						</div>
+					</div>
+					<div className="h-72"></div>
+					<div className="flex-1 w-full">
+						<div className="flex flex-col ">
+							<Fullname
+								text={fullname}
+								onClick={() =>
+									dispatch(togglePersonalInfo(true))
+								}
+							/>
+							<Birthday
+								text={birth}
+								classname="mt-1.5"
+								onClick={() =>
+									dispatch(togglePersonalInfo(true))
+								}
+							/>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
