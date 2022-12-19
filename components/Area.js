@@ -8,6 +8,7 @@ import Birthday from "./area/Birthday";
 import Country from "./area/Country";
 import Technologies from "./area/Technologies";
 import Position from "./area/Position";
+import Photo from "./area/Photo";
 
 import {
 	togglePersonalInfo,
@@ -21,6 +22,8 @@ const Area = () => {
 	const { fullname, birth, country, technologies, position } = useSelector(
 		(state) => state.user
 	);
+
+	const { raw } = useSelector((state) => state.photo);
 
 	const dispatch = useDispatch();
 
@@ -36,9 +39,7 @@ const Area = () => {
 				id="layer"
 				data-testid="Area.layer"
 			>
-				<div className=" h-full w-full absolute top-0 left-0 z-0">
-					<div className="bg-white relative mt-20 h-56 w-44 mx-auto border-2 border-white z-0 rounded-[50%] overflow-hidden"></div>
-				</div>
+				<Photo source={raw} />
 				<div className="flex items-stretch flex-col h-full z-10 relative">
 					<div className="flex-1 w-full flex justify-between">
 						<div className="">
@@ -54,7 +55,6 @@ const Area = () => {
 								classname="mt-1.5"
 								onClick={() => dispatch(toggleCountry(true))}
 							/>
-
 							<Position
 								position={position}
 								onClick={() => dispatch(togglePosition(true))}
