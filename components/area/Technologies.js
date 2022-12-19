@@ -24,7 +24,10 @@ const Technologies = ({ technologies, onClick }) => {
 
 	return (
 		<div
-			className={classNames([styles.container, "cursor-pointer"])}
+			className={classNames([
+				styles.container,
+				"cursor-pointer opacity-80",
+			])}
 			onClick={onClick}
 		>
 			{list.length > 0 &&
