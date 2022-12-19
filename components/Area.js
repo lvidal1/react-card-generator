@@ -37,7 +37,7 @@ const Area = () => {
 				data-testid="Area.layer"
 			>
 				<div className=" h-full w-full absolute top-0 left-0 z-0">
-					<div className="relative mt-24 h-52 w-40 mx-auto border-2 border-white z-0"></div>
+					<div className="bg-white relative mt-20 h-56 w-44 mx-auto border-2 border-white z-0 rounded-[50%] overflow-hidden"></div>
 				</div>
 				<div className="flex items-stretch flex-col h-full z-10 relative">
 					<div className="flex-1 w-full flex justify-between">
