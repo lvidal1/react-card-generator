@@ -3,9 +3,21 @@
 }
 
 .layer {
-	@apply w-4/5 mx-auto h-96 max-h-96 p-4;
+	@apply w-4/5 mx-auto h-96 max-h-96 p-3;
 }
 
 .bg-layer-purple {
 	@apply bg-transparent border-8 border-sand;
+}
+
+.bg-layer-color-1 {
+	@apply bg-gradient-to-tr from-pink-500 via-red-500 to-purple-800;
+}
+
+.bg-layer-color-2 {
+	@apply bg-gradient-to-bl from-pink-600 via-red-400 to-purple-700;
+}
+
+.bg-layer-color-3 {
+	@apply bg-gradient-to-bl from-pink-600 via-blue-400 to-purple-700;
 }

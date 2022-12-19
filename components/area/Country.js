@@ -17,7 +17,10 @@ const Country = ({ iso, onClick }) => {
 	return (
 		iso && (
 			<span
-				className={classNames([styles.container, "cursor-pointer"])}
+				className={classNames([
+					styles.container,
+					"cursor-pointer opacity-80",
+				])}
 				data-testid="Country.Flag"
 				onClick={onClick}
 			>
