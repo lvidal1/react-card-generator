@@ -26,7 +26,7 @@ const Position = () => {
 		if (xPosition.length) {
 			setModalPosition(xPosition);
 		}
-	}, []);
+	}, [xPosition]);
 
 	const submit = () => {
 		if (modalPosition.length) {

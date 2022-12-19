@@ -43,7 +43,7 @@ const Information = () => {
 		if (xBirth.length) {
 			setBirth(xBirth);
 		}
-	}, []);
+	}, [xFullname, xBirth]);
 
 	return (
 		<Modal>

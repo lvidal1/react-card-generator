@@ -18,7 +18,7 @@ const Technology = () => {
 
 	const { technologies: xTechnologies } = useSelector((state) => state.user);
 
-	const { byId, list } = useSelector((state) => state.technology);
+	const { byId } = useSelector((state) => state.technology);
 
 	const [modalTechnology, setModalTechnology] = useState([]);
 	const [searchTech, setSearchTech] = useState("");
@@ -28,7 +28,7 @@ const Technology = () => {
 		if (xTechnologies.length) {
 			setModalTechnology(xTechnologies);
 		}
-	}, []);
+	}, [xTechnologies]);
 
 	const submit = () => {
 		if (modalTechnology.length && !selectionIsFull()) {
@@ -115,7 +115,7 @@ const Technology = () => {
 						const version = getVersion(techId);
 
 						return (
-							<span>
+							<span key={`techId.${techId}`}>
 								<i
 									className={classNames(
 										`devicon-${techId}-${version} colored`,
