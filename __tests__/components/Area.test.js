@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 
 describe('Area', () => {
     const initialState = {
-        user: { fullname: '', birth: '' }, technology: { byId: {}, list: [] }, photo : { raw: ""}
+        user: { fullname: '', birth: '' }, technology: { byId: {}, list: [] }, photo: { raw: "" }
     }
     const mockStore = configureStore();
     let store;
@@ -26,4 +26,3 @@ const createArea = ({ store }) => {
         <Area />
     </Provider>)
 }
-
